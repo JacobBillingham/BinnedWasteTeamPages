@@ -1,0 +1,35 @@
+
+/*----------------NAVBAR ---------------*/
+.navbar-default {
+    color: #ffffff;
+    background-color: #00a33b;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.active>a, 
+a.dropdown-toggle:hover {
+  color: #ffffff;
+  background-color: #00a33b !important;
+}
+
+/* Dropdown menu color */
+.navbar-default .dropdown-menu {
+  color: #ffffff;
+  background-color: #00a33b;
+}
+
+/* Dropdown menu hover color */
+  .navbar-default .dropdown-menu>li>a:hover {
+    color: #ffffff;
+    background-color: #00a33b;
+  }
+  
+  /* Navbar Links when hovered*/
+.navbar-default .dropdown-menu>.active>a
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav:hover, 
+.navbar-default .navbar-nav>li>a:hover, 
+a.navbar-brand:hover {
+  color: #ffffff !important;
+  background-color: #00a33b;
+}

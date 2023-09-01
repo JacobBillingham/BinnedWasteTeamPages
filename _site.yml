@@ -1,9 +1,27 @@
-name: "my-website"
+name: "Binned Waste Team Pages"
 output_dir: docs
+output:
+  html_document:
+    css: style.css
+    includes:
+      in_header: header.html
 navbar:
-  title: "My Website"
+  title: "Binned Waste Team Pages"
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Team Members"
+      href: team.html
+    - text: "Our Work"
+      href: work.html   
+    - text: "Coding"
+      menu:
+      - text: "Github"
+        href: github.html
+      - text: "R Studio"
+        href: rstudio.html
+      - text: "Coding Standards"
+        href: standards.html
+    - text: "Glossary"
+      href: glossary.html
+       

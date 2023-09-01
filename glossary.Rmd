@@ -1,0 +1,28 @@
+---
+title: "Glossary"
+---
+
+```{r setup, include = FALSE}
+
+library(magrittr)
+
+```
+
+```{r glossary, echo = FALSE}
+
+#copy and paste below to add new row
+# %>% 
+#   add_row(Word = "Resources and Waste Evidence", Acronym="R&WE", Definition = "...")
+
+glossary <- df <- data.frame(Word  = c(""), Acronym = c(""), Definition =c("")) %>% 
+  tibble::add_row(Word = "Resources and Waste Evidence", Acronym="R&WE", Definition = "...") %>%
+  tibble::add_row(Word = "Collection and Packaging Reforms", Acronym="CPR", 
+          Definition = "The legislative reforms encompass pEPR, DRS and Simpler Recycling.") %>% 
+  tibble::add_row(Word = "Deposit Return Scheme", Acronym="DRS", Definition = "...") %>% 
+  tibble::add_row(Word = "Packaging Extended Producer Responsibility", Acronym="pEPR", Definition = "...") %>%
+  dplyr::arrange(Word) %>%
+  gt::gt() 
+
+glossary
+
+```

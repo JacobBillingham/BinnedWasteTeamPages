@@ -1,9 +1,9 @@
 ---
-title: "My Website"
+title: "Welcome!"
 ---
 
-Hello, Website!
+[comment]: <> (rmarkdown::render_site())
 
-For more information about simple R Markdown websites, please read the documentation at https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html.
+These pages will get you up to speed on the team and its work! You should refer back to them if there is something you don't know (but feel free to ask questions)!
 
-Please also note that simple R Markdown sites are _not_ based on **blogdown**. They are probably good for websites with only a few Rmd documents. For larger-scale and more sophisticated websites (such as blogs), you may want to use **blogdown** instead: https://github.com/rstudio/blogdown.
+Please suggest anything you think is missing from this site!
