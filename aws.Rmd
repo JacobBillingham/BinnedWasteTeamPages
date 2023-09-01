@@ -1,0 +1,7 @@
+---
+title: "AWS"
+---
+
+We store our data using Amazon Web Services [S3]{https://en.wikipedia.org/wiki/Amazon_S3} site.
+
+When we upload, modify or delete data on S3, this must be recorded in the [Data Log].
