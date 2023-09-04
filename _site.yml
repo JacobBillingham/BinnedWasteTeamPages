@@ -13,17 +13,19 @@ navbar:
     - text: "Our Team"
       href: team.html
     - text: "Our Work"
-      href: work.html   
+      menu:
+      - text: "Our Work"
+        href: work.html
+      - text: "Sprint Cadence"
+        href: sprint.html
     - text: "Coding"
       menu:
       - text: "Coding Standards"
         href: standards.html
+      - text: "Coding Enviroment"
+        href: sce.html      
       - text: "Github"
         href: github.html
-      - text: "R Studio"
-        href: rstudio.html
-      - text: "AWS"
-        href: aws.html      
     - text: "Glossary"
       href: glossary.html
        

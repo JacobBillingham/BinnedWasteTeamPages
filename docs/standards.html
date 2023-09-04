@@ -250,8 +250,20 @@ $(document).ready(function () {
 <li>
   <a href="team.html">Our Team</a>
 </li>
-<li>
-  <a href="work.html">Our Work</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Our Work
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="work.html">Our Work</a>
+    </li>
+    <li>
+      <a href="sprint.html">Sprint Cadence</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -264,13 +276,10 @@ $(document).ready(function () {
       <a href="standards.html">Coding Standards</a>
     </li>
     <li>
+      <a href="sce.html">Coding Enviroment</a>
+    </li>
+    <li>
       <a href="github.html">Github</a>
-    </li>
-    <li>
-      <a href="rstudio.html">R Studio</a>
-    </li>
-    <li>
-      <a href="aws.html">AWS</a>
     </li>
   </ul>
 </li>
@@ -294,7 +303,13 @@ $(document).ready(function () {
 </div>
 
 
-
+<p>Our coding standards can be found <a
+href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&amp;file=Coding%20Standards.pptx&amp;action=edit&amp;mobileredirect=true">here</a>.
+The main points are:</p>
+<ol style="list-style-type: decimal">
+<li>We explicitly call packages rather than loading them.</li>
+<li>…</li>
+</ol>
 
 
 

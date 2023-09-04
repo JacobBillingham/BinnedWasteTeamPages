@@ -11,7 +11,7 @@
 
 
 
-<title>R Studio</title>
+<title>Sprint Cadence</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -250,8 +250,20 @@ $(document).ready(function () {
 <li>
   <a href="team.html">Our Team</a>
 </li>
-<li>
-  <a href="work.html">Our Work</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Our Work
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="work.html">Our Work</a>
+    </li>
+    <li>
+      <a href="sprint.html">Sprint Cadence</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -264,13 +276,10 @@ $(document).ready(function () {
       <a href="standards.html">Coding Standards</a>
     </li>
     <li>
+      <a href="sce.html">Coding Enviroment</a>
+    </li>
+    <li>
       <a href="github.html">Github</a>
-    </li>
-    <li>
-      <a href="rstudio.html">R Studio</a>
-    </li>
-    <li>
-      <a href="aws.html">AWS</a>
     </li>
   </ul>
 </li>
@@ -289,12 +298,53 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">R Studio</h1>
+<h1 class="title toc-ignore">Sprint Cadence</h1>
 
 </div>
 
 
-
+<p>When working in sprint mode the planned cadence is:</p>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th align="center">Monday</th>
+<th align="center">Tuesday</th>
+<th align="center">Wednesday</th>
+<th align="center">Thursday</th>
+<th align="center">Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Week 1</td>
+<td align="center">Sprint Planning (1hr)</td>
+<td align="center"></td>
+<td align="center">Task Meeting (15 mins)</td>
+<td align="center"></td>
+<td align="center">Task Meeting (15 mins)</td>
+</tr>
+<tr class="even">
+<td>Week 2</td>
+<td align="center">Weekend Catch Up (15 mins)</td>
+<td align="center"></td>
+<td align="center">Task Meeting (15 mins)</td>
+<td align="center"></td>
+<td align="center">Sprint Review (1hr)</td>
+</tr>
+</tbody>
+</table>
+<p>Three or four of these two weeks sprint will form each <strong>model
+building cycle</strong>. We will use Jira and/or Github Projects to keep
+track of tasks.</p>
 
 
 

@@ -1,0 +1,12 @@
+---
+title: "Sprint Cadence"
+---
+
+When working in sprint mode the planned cadence is:
+
+| | Monday | Tuesday | Wednesday | Thursday | Friday |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Week 1 | Sprint Planning (1hr) | | Task Meeting (15 mins) | | Task Meeting (15 mins) |
+| Week 2 | Weekend Catch Up (15 mins) | | Task Meeting (15 mins) | | Sprint Review (1hr) |
+
+Three or four of these two weeks sprint will form each **model building cycle**. We will use Jira and/or Github Projects to keep track of tasks.
