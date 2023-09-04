@@ -17,3 +17,7 @@ excel_data <- aws.s3::s3read_using(
   fillMergedCells = TRUE,
   bucket = "s3-ranch-043")
 ```
+
+# R Studio
+
+We can use [R Studio on our virtual machine](http://ranch-479.int.sce.network/rstudio/). This is available 8am - 8pm daily. 
