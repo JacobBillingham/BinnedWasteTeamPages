@@ -12,9 +12,9 @@ navbar:
       href: team.html
     - text: "Our Work"
       menu:
-      - text: "Our Work"
+      - text: "What We Do"
         href: work.html
-      - text: "Sprint Cadence"
+      - text: "How We Work"
         href: sprint.html
     - text: "Coding"
       menu:
@@ -26,4 +26,7 @@ navbar:
         href: github.html
     - text: "Glossary"
       href: glossary.html
+    - text: "Useful Links"
+      href: links.html
+      
        

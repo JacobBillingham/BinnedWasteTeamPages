@@ -1,0 +1,23 @@
+---
+title: "Useful Links"
+---
+
+[comment]: <> (Could probably write a script to compile these.)
+
+Here are all the links from across the team pages (and some extras) in one place for your convenience:
+
+- Our Team
+    - [Defra organogram](https://defra.sharepoint.com/sites/Defraintranet/SitePages/Organisational-chart.aspx)
+    - [CPR organogram](https://defra.sharepoint.com/teams/Team1478/Central%20PMO/Forms/AllItems.aspx?csf=1&web=1&e=40pAnJ&cid=6748e449%2Da960%2D4705%2D9694%2D022465844f7d&RootFolder=%2Fteams%2FTeam1478%2FCentral%20PMO%2F06%2E%20Resourcing%2F03%2E%20Resource%20%26%20Waste%20People%20%26%20Resourcing%2F1%2E%20Org%20Charts&FolderCTID=0x012000A44110381EB3CB4C816BD7BB43BEA974&OR=Teams%2DHL&CT=1692001571358&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA3MDMwNzMzMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
+    - [R&WE organogram](https://defra.sharepoint.com/:p:/t/Team419/ET9BduVb5n1KoY1MRh_HzIgBpMcze0Na0iz3Zdlg0Xnljw?e=BgFqbk&CID=400146ED-B571-496F-BA2F-ED9010488AF3&wdLOR=c7120BEFD-55C0-4AC6-B916-B17122625B69)
+    - [RaWE people profiles](https://defra-my.sharepoint.com/:p:/g/personal/tom_murray_defra_gov_uk/EcTYX_OX0qtEm0gN_GXgUQ4BBtZgG5OPmE02MVU76EEhGQ?e=KuEkTh&CID=FFECBB6E-020D-486D-8BFD-26117AADF70F&wdLOR=c84AF2036-EE62-4C16-A268-471DB21710F8)
+- Our Work
+    - [Plan on a page](https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B14C0DDD3-867B-4EA2-BC52-CB7999CE1165%7D&file=04%20Binned_Waste_Programme_POAP_LIVE.pptx&action=edit&mobileredirect=true&PreviousSessionID=ebc4a168-d4bd-f4a1-e658-81828bc9da9f)
+- Coding
+    - [Coding standards](https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&file=Coding%20Standards.pptx&action=edit&mobileredirect=true)
+    - [AWS console](https://int-sce-network.awsapps.com/console)
+    - [Data Log](https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&file=Data%20Log%20Ranch_479.xlsx&action=default&mobileredirect=true)
+    - [Useful scripts repo](https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd)
+    - [R Studio](http://ranch-479.int.sce.network/rstudio/)
+    - [Github organisation homepage](https://github.com/Defra-pEPR-Modelling-Team)
+    

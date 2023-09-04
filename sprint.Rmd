@@ -1,12 +1,28 @@
 ---
-title: "Sprint Cadence"
+title: "How We Work"
 ---
 
-When working in sprint mode the planned cadence is:
+When working on model the we use the following methodology:
+
+```{r comment, include=FALSE}
+# | | Monday | Tuesday | Wednesday | Thursday | Friday |
+# |---|:---:|:---:|:---:|:---:|:---:|
+# | Week 1 | Sprint Planning (1hr) | | Task Meeting (15 mins) | | Task Meeting (15 mins) |
+# | Week 2 | Weekend Catch Up (15 mins) | | Task Meeting (15 mins) | | Sprint Review (1hr) |
+# 
+# Three or four of these two weeks sprint will form each **model building cycle**. We will use Jira and/or Github Projects to keep track of tasks.
+```
 
 | | Monday | Tuesday | Wednesday | Thursday | Friday |
 |---|:---:|:---:|:---:|:---:|:---:|
-| Week 1 | Sprint Planning (1hr) | | Task Meeting (15 mins) | | Task Meeting (15 mins) |
-| Week 2 | Weekend Catch Up (15 mins) | | Task Meeting (15 mins) | | Sprint Review (1hr) |
+| **Meeting** | Allocating Tasks (10 am, 45 mins) | | Task Updates (10 am, 30 mins) | | Task Review (10 am, 45 mins) |
+| **Purpose** | Deciding which tickets we want to complete this week.| Completing tickets. | Updating on completed tasks, identifying blockers for uncompleted tasks. | Completing tickets. | Confirming completed tasks, look forward to next week. |
 
-Three or four of these two weeks sprint will form each **model building cycle**. We will use Jira and/or Github Projects to keep track of tasks.
+Three or four of these sprints will form each **model building cycle**. These will be bookended by extended kickoff and review meetings as shown below:
+
+|||||||
+|---|:---:|:---:|:---:|:---:|:---:|
+| **Activity** | Kickoff Meeting (1 hr) | Sprint 1 | Sprint 2 | Sprint 3 | Review Meeting (1 hr) |
+| **Purpose** | What do we want to achieve this cycle? |||| Did we achieve our goals? What lessons did we learn? Review our ticket backlog. |
+
+We will use Jira and/or Github Projects to keep track of tasks.
