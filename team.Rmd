@@ -21,11 +21,12 @@ For more info, see slide 5 on the [R&WE organogram](https://defra.sharepoint.com
 
 # Team Members
 
-| Name | Location | Working Pattern | Areas of Work | Preferred Communication Method | Tips for Working Together | ... |
-|---|---|---|---|---|---|---|
-| Jake Billingham | In the London office Mon - Thur, at home in North London on Friday | Mon - Fri, 9:30 - 5:30 | Team Lead | In person > MS Teams message > Email  (but use email for anything we may need a record of) |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
+| Name | Location | Working Pattern | Areas of Work | Preferred Communication Method | Tips for Working Together | 
+|---|---|---|---|---|---|
+| Jake Billingham | In the London office Mon - Thur, at home in North London on Friday | Mon - Fri, 9:30 - 5:30 | Team Lead | In person > Teams message > Email (but use email for anything we may need a record of) | Don't put meetings over Wednesday table tennis!  |
+| Ope Ojo  |  |  |  |  |  |
+| Jo Keegan |  |  |  |  |  |
+| Mystery Coder |  |  |  |  |  |
 
 # Organisation
 

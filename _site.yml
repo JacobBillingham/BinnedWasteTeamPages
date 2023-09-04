@@ -8,8 +8,6 @@ output:
 navbar:
   title: "Binned Waste Team Pages"
   left:
-    - text: "Home"
-      href: index.html
     - text: "Our Team"
       href: team.html
     - text: "Our Work"
