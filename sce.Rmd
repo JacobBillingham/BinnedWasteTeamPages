@@ -1,5 +1,5 @@
 ---
-title: "Coding Environent"
+title: "Coding Environment"
 ---
 
 We use Defra's **Scientific Coding Environment** which allows us to write and run code on Amazon Web Service's EC2 virtual machines, and store our data using Amazon Web Services S3. Speak to the SCE admins (Ope and Jake as of September 2023) if you are not set up on the SCE.

@@ -22,7 +22,7 @@ navbar:
       menu:
       - text: "Coding Standards"
         href: standards.html
-      - text: "Coding Enviroment"
+      - text: "Coding Environment"
         href: sce.html      
       - text: "Github"
         href: github.html
