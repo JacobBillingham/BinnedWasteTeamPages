@@ -20,4 +20,7 @@ Here are all the links from across the team pages (and some extras) in one place
     - [Useful scripts repo](https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd)
     - [R Studio](http://ranch-479.int.sce.network/rstudio/)
     - [Github organisation homepage](https://github.com/Defra-pEPR-Modelling-Team)
-    
+- Other
+    - [Waste Flows Shiny App](https://jacobbillingham.shinyapps.io/WasteFlows/)
+    - [Carbon Emissions Shiny App](https://jacobbillingham.shinyapps.io/CarbonVisualisations/)
+    - [Fees and Payments Calculator Sharepoint](https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1684860172742&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29&viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4)

@@ -11,20 +11,24 @@ library(magrittr)
 ```{r glossary, echo = FALSE}
 
 #copy and paste below to add new row
-# %>% 
-#   add_row(Word = "Resources and Waste Evidence", Acronym="R&WE", Definition = "...")
+# tibble::add_row(Word = "Material Recovery Facilities", Acronym="MRF", Definition = "...") %>%
 
 glossary <- df <- data.frame(Word  = c(""), Acronym = c(""), Definition =c("")) %>% 
-  tibble::add_row(Word = "Resources and Waste Evidence", Acronym="R&WE", Definition = "...") %>%
+  tibble::add_row(Word = "Resources and Waste Evidence", Acronym="R&WE", Definition = "One of the two wider teams that the FPC team sits within, with the other being Extended Producer Responsibility Delivery, see 'Our Team' for more info.") %>%
   tibble::add_row(Word = "Collection and Packaging Reforms", Acronym="CPR", 
           Definition = "The legislative reforms that encompass pEPR, DRS and Simpler Recycling.") %>% 
   tibble::add_row(Word = "Deposit Return Scheme", Acronym="DRS", Definition = "A planned system whereby people pay a small deposit on drinks bottles which can be reclaimed when the bottle is returned.") %>% 
   tibble::add_row(Word = "Packaging Extended Producer Responsibility", Acronym="pEPR", Definition = "A planned system which will transfer the costs of collecting and disposing of packaging from LAs to producers.") %>%
-  tibble::add_row(Word = "Local Authority", Acronym="LA", Definition = "The organisations that govern local areas and organise waste collection and disposal, examples include 'Camden London Borough Council' or 'Cheltenham Borough Council'") %>%
-  tibble::add_row(Word = "Waste Disposal Authority", Acronym="WDA", Definition = "...") %>%
-  tibble::add_row(Word = "Waste Collection Authority", Acronym="WCA", Definition = "...") %>%
+  tibble::add_row(Word = "Local Authority", Acronym="LA", Definition = "The organisations that govern local areas and organise waste collection and disposal, examples include 'Camden London Borough Council' or 'Cheltenham Borough Council'.") %>%
+  tibble::add_row(Word = "Waste Disposal Authority", Acronym="WDA", Definition = "Areas that do not have a unitary authority are governed by two authorities, one of which (usually the county council) is a WDA, which is responsible for disposing of waste e.g. EfWs, MRFs, landfill etc.") %>%
+  tibble::add_row(Word = "Waste Collection Authority", Acronym="WCA", Definition = "Areas that do not have a unitary authority are governed by two authorities, one of which (usually the district council) is a WCA, which is responsible for collecting waste e.g. kerbside collection, bin lorries, HWRCs and bring sites.") %>%
   tibble::add_row(Word = "Packaging Producers", Acronym="-", Definition = "The companies that manufacture and/or sell products contained in packaging, for example Coca-Cola, McDonald's and Unilever.") %>%
   tibble::add_row(Word = "Fees and Payments Calculator", Acronym="FPC", Definition = "The model we are building to calculate LA costs and producer fees.") %>%
+  tibble::add_row(Word = "Material Recovery Facilities", Acronym="MRF", Definition = "Waste disposal facilities that take comingled recycling material and sort it into different material types.") %>%
+  tibble::add_row(Word = "Energy from Waste", Acronym="EfW", Definition = "Waste disposal facilities that burn waste and use the resulting heat to generate electricity.") %>%
+  tibble::add_row(Word = "Household Waste Recycling Centre", Acronym="HWRC", Definition = "Sites where individuals can bring their waste that is not or can not be captured by kerbside recycling, commonly known as tips.") %>%
+  tibble::add_row(Word = "Waste Data Flow", Acronym="WDF", Definition = "A system that LAs report waste information on, primarily waste tonnages, available at www.wastedataflow.org.") %>%
+  tibble::add_row(Word = "Local Authority pEPR Costs and Peformance Model", Acronym="LApCaP", Definition = "The model being developed under Module B1 that will output local authority packaging processing costs.") %>%
   dplyr::arrange(Word) %>%
   gt::gt() 
 
