@@ -21,11 +21,14 @@ For more info, see slide 5 on the [R&WE organogram](https://defra.sharepoint.com
 
 # Team Members
 
+[comment]: <> (Have this data in an excel file that I can then download and write a script to produce this table?)
+
 | Name | Location | Working Pattern | Areas of Work | Preferred Communication Method | Tips for Working Together | 
 |---|---|---|---|---|---|
 | Jake Billingham | In the London office Mon - Thur, at home in North London on Friday | Mon - Fri, 9:30 - 5:30 | Team Lead | In person > Teams message > Email (but use email for anything we may need a record of) | Don't put meetings over Wednesday table tennis!  |
 | Ope Ojo  |  |  |  |  |  |
 | Jo Keegan |  |  |  |  |  |
+| Clare Watson |  |  |  |  |  |
 | Mystery Coder |  |  |  |  |  |
 
 **New joiners:** Let Jake know and he can add your details!
