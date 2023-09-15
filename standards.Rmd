@@ -5,4 +5,25 @@ title: "Coding Standards"
 Our coding standards can be found [here](https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&file=Coding%20Standards.pptx&action=edit&mobileredirect=true). The main points are:
 
 1. We explicitly call packages rather than loading them.
-2. ...
+Do:
+```{r package do}
+
+dplyr::select(...)
+
+```
+Don't:
+```{r package dont}
+
+library(dplyr)
+
+select(...)
+
+```
+2. Variable names must make sense in plain English e.g. `r localAuthorityPopulation` not `r lapop`.
+3. We use camelCase e.g. `r localAuthorityPopulation` not `r local_authority_population`.
+
+# Naming Conventions
+
+1. Github repositories should be all lower case with underscores "_" instead of spaces.
+2. R Scripts should be...
+3. Excel files or CSVs should be...

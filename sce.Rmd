@@ -8,6 +8,8 @@ We use Defra's **Scientific Coding Environment** which allows us to write and ru
 
 S3 is accessed through the [AWS console](https://int-sce-network.awsapps.com/console). When we upload, modify or delete data on S3, this must be recorded in the [Data Log](https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&file=Data%20Log%20Ranch_479.xlsx&action=default&mobileredirect=true).
 
+All binned waste data should be stored in the 'moduleB2' folder at: "s3://s3-ranch-043/moduleB2/".
+
 Scripts for reading and writing to AWS can be found in the [useful scripts repo](https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd). Here is an example of **reading** an **Excel** file:
 ```{r AWS read, eval = FALSE}
 excel_data <- aws.s3::s3read_using(
