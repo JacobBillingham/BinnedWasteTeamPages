@@ -5,22 +5,39 @@ title: "Coding Standards"
 Our coding standards can be found [here](https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&file=Coding%20Standards.pptx&action=edit&mobileredirect=true). The main points are:
 
 1. We explicitly call packages rather than loading them.
-Do:
-```{r package do}
+
+<table>
+<tr>
+<th> Do </th>
+<th> &emsp; </th>
+<th> Don't </th>
+</tr>
+<tr>
+<td>
+```{r, eval=FALSE}
 
 dplyr::select(...)
 
 ```
-Don't:
-```{r package dont}
+</td>
+<td>
+</td>
+<td>
+
+```{r, eval=FALSE}
 
 library(dplyr)
 
 select(...)
 
 ```
-2. Variable names must make sense in plain English e.g. `r localAuthorityPopulation` not `r lapop`.
-3. We use camelCase e.g. `r localAuthorityPopulation` not `r local_authority_population`.
+
+</td>
+</tr>
+</table>
+
+2. Variable names must make sense in plain English e.g. `localAuthorityPopulation` not `lapop`.
+3. We use camelCase e.g. `localAuthorityPopulation` not `local_authority_population`.
 
 # Naming Conventions
 

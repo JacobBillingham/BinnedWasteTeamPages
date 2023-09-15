@@ -308,8 +308,47 @@ href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sou
 The main points are:</p>
 <ol style="list-style-type: decimal">
 <li>We explicitly call packages rather than loading them.</li>
-<li>…</li>
 </ol>
+<table>
+<tr>
+<th>
+Do
+</th>
+<th>
+ 
+</th>
+<th>
+Don’t
+</th>
+</tr>
+<tr>
+<td>
+<pre class="r"><code>dplyr::select(...)</code></pre>
+</td>
+<td>
+</td>
+<td>
+<pre class="r"><code>library(dplyr)
+
+select(...)</code></pre>
+</td>
+</tr>
+</table>
+<ol start="2" style="list-style-type: decimal">
+<li>Variable names must make sense in plain English
+e.g. <code>localAuthorityPopulation</code> not <code>lapop</code>.</li>
+<li>We use camelCase e.g. <code>localAuthorityPopulation</code> not
+<code>local_authority_population</code>.</li>
+</ol>
+<div id="naming-conventions" class="section level1">
+<h1>Naming Conventions</h1>
+<ol style="list-style-type: decimal">
+<li>Github repositories should be all lower case with underscores “_”
+instead of spaces.</li>
+<li>R Scripts should be…</li>
+<li>Excel files or CSVs should be…</li>
+</ol>
+</div>
 
 
 
