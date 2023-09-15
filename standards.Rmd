@@ -8,11 +8,14 @@ Our coding standards can be found [here](https://defra.sharepoint.com/:p:/r/team
 
 <table>
 <tr>
+<th> &emsp; </th>
 <th> Do </th>
 <th> &emsp; </th>
 <th> Don't </th>
 </tr>
 <tr>
+<td>
+</td>
 <td>
 ```{r, eval=FALSE}
 

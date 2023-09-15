@@ -244,8 +244,20 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="team.html">Our Team</a>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Our Team
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="team.html">Team Members</a>
+    </li>
+    <li>
+      <a href="organisation.html">Organisation</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -274,9 +286,6 @@ $(document).ready(function () {
     </li>
     <li>
       <a href="sce.html">Coding Environment</a>
-    </li>
-    <li>
-      <a href="github.html">Github</a>
     </li>
   </ul>
 </li>
@@ -315,8 +324,8 @@ href="https://int-sce-network.awsapps.com/console">AWS console</a>. When
 we upload, modify or delete data on S3, this must be recorded in the <a
 href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">Data
 Log</a>.</p>
-<p>All binned waste data should be stored in the ‘moduleB2’ folder at:
-“s3://s3-ranch-043/moduleB2/”.</p>
+<p><strong>All binned waste data</strong> should be stored in the
+‘moduleB2’ folder at: <em>s3://s3-ranch-043/moduleB2/</em>.</p>
 <p>Scripts for reading and writing to AWS can be found in the <a
 href="https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd">useful
 scripts repo</a>. Here is an example of <strong>reading</strong> an
@@ -333,6 +342,12 @@ scripts repo</a>. Here is an example of <strong>reading</strong> an
 <p>We can use <a href="http://ranch-479.int.sce.network/rstudio/">R
 Studio on our virtual machine</a>. This is available 8am - 8pm
 daily.</p>
+</div>
+<div id="github" class="section level1">
+<h1>Github</h1>
+<p>We use Github for version control, collaboration and code reviews.
+Our <a href="https://github.com/Defra-pEPR-Modelling-Team">organisation
+homepage</a> has information on how to do all of these.</p>
 </div>
 
 

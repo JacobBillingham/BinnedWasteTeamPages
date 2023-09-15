@@ -9,7 +9,11 @@ navbar:
   title: "Binned Waste Team Pages"
   left:
     - text: "Our Team"
-      href: team.html
+      menu:
+      - text: "Team Members"
+        href: team.html
+      - text: "Organisation"
+        href: organisation.html
     - text: "Our Work"
       menu:
       - text: "What We Do"
@@ -22,8 +26,6 @@ navbar:
         href: standards.html
       - text: "Coding Environment"
         href: sce.html      
-      - text: "Github"
-        href: github.html
     - text: "Glossary"
       href: glossary.html
     - text: "Useful Links"

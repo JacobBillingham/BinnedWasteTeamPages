@@ -244,8 +244,20 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="team.html">Our Team</a>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Our Team
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="team.html">Team Members</a>
+    </li>
+    <li>
+      <a href="organisation.html">Organisation</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -274,9 +286,6 @@ $(document).ready(function () {
     </li>
     <li>
       <a href="sce.html">Coding Environment</a>
-    </li>
-    <li>
-      <a href="github.html">Github</a>
     </li>
   </ul>
 </li>
@@ -312,6 +321,9 @@ The main points are:</p>
 <table>
 <tr>
 <th>
+ 
+</th>
+<th>
 Do
 </th>
 <th>
@@ -322,6 +334,8 @@ Don’t
 </th>
 </tr>
 <tr>
+<td>
+</td>
 <td>
 <pre class="r"><code>dplyr::select(...)</code></pre>
 </td>
