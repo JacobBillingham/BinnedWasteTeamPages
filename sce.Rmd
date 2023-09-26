@@ -2,7 +2,7 @@
 title: "Coding Environment"
 ---
 
-We use Defra's **Scientific Coding Environment** which allows us to write and run code on Amazon Web Service's EC2 virtual machines, and store our data using Amazon Web Services S3. Speak to the SCE admins (Ope and Jake as of September 2023) if you are not set up on the SCE.
+We use Defra's **Scientific Coding Environment** which allows us to write and run code on Amazon Web Service's EC2 virtual machines, and store our data using Amazon Web Services S3. Speak to the SCE admins (Ope and Jake as of September 2023) if you are not set up on the SCE. Guidance documents can be found at on [Sharepoint](https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1684860172742&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29%2F18%20Module%20B1%20%2D%20LA%20FNCs%2F14%20Module%20B1%20Admin%2FCoding%20Environment&viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4).
 
 # S3
 
