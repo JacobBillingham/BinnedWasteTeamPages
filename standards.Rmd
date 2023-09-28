@@ -63,6 +63,9 @@ Important points:
     - We should automate the aspects of quality assurance that are challenging for humans. This frees up time and makes it easier to keep a record of what QA has been performed. The purpose of this automation is not to get rid of analysts, but to allow analysts to focus on the QA that computers cannot easily do. For example, analysts are much better at ensuring that the analysis is fit for purpose.      
     - We should automate the aspects of quality assurance that are challenging for humans. This frees up time and makes it easier to keep a record of what QA has been performed. The purpose of this automation is not to get rid of analysts, but to allow analysts to focus on the QA that computers cannot easily do. For example, analysts are much better at ensuring that the analysis is fit for purpose.
     - will have several levels of master and sub scripts, with one all powerful one (that calls the waste flow and cost/ tonne model)
+    - In Agile, working software is considered the primary measure of success. This means that we don’t spend months creating detailed plans and documenting specifications. Instead, we prioritise early and continuous delivery of working software. 
+    
+    https://style.tidyverse.org/index.html
     
 #Jake's Plan
 
