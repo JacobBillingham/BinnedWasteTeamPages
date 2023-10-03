@@ -25,7 +25,9 @@ navbar:
       - text: "Coding Standards"
         href: standards.html
       - text: "Coding Environment"
-        href: sce.html      
+        href: sce.html
+      - text: "Learning"
+        href: learning.html  
     - text: "Glossary"
       href: glossary.html
     - text: "Useful Links"
