@@ -18,6 +18,8 @@ navbar:
       menu:
       - text: "What We Do"
         href: work.html
+      - text: "Meeting Etiquette"
+        href: meetings.html
       - text: "How We Work"
         href: sprint.html
     - text: "Coding"
