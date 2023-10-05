@@ -14,3 +14,8 @@ These guidelines for meetings are endorsed by our senior leadership so please us
 7.	Avoid multi-tasking and working on other documents allowing people to be present. 
 8.	Using calendars correctly - accepting and declining meetings (select to send a response this will update tracking) - tracking can then be seen and it can be   determined if the meeting should go ahead.
 9.	A short readout and key points should be cascaded to relevant teams asap after the meeting.
+
+Some additional tips:
+
+-   You can set meetings to start at 5 past automatically (File > Options > Calendar > Shorten appointments and meetings)
+-   
