@@ -1,4 +1,4 @@
-name: "Binned Waste Team Pages"
+name: "Module B Team Pages"
 output_dir: docs
 output:
   html_document:
@@ -6,26 +6,16 @@ output:
     includes:
       in_header: header.html
 navbar:
-  title: "Binned Waste Team Pages"
+  title: "Module B Team Pages"
   left:
-    - text: "Our Team"
-      menu:
-      - text: "Team Members"
-        href: team.html
-      - text: "Organisation"
-        href: organisation.html
-    - text: "Our Work"
-      menu:
-      - text: "What We Do"
-        href: work.html
-      - text: "How We Work"
-        href: sprint.html
+    - text: "How We Work"
+      href: sprint.html
     - text: "Coding"
       menu:
+      - text: "Coding Environment"
+        href: sce.html      
       - text: "Coding Standards"
         href: standards.html
-      - text: "Coding Environment"
-        href: sce.html
       - text: "Learning"
         href: learning.html  
     - text: "Glossary"
