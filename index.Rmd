@@ -4,6 +4,6 @@ title: "Welcome!"
 
 [comment]: <> (rmarkdown::render_site())
 
-These pages will get you up to speed on the team and its work! You should refer back to them if there is something you don't know (but feel free to ask questions)!
+These pages contain all the information you need to code in the Fees and Payments Calculator team! You should refer back to them if there is something you don't know (but feel free to ask questions)!
 
 Please suggest anything you think is missing from this site!

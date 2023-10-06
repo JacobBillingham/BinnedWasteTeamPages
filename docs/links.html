@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -221,6 +224,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -228,6 +294,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -244,17 +320,14 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Our Work
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="sprint.html">How We Work</a>
-    </li>
-  </ul>
+        <li>
+  <a href="requests.html">Pull Requests</a>
+</li>
+<li>
+  <a href="review.html">Code Review</a>
+</li>
+<li>
+  <a href="sprint.html">Timings</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -264,18 +337,15 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="standards.html">Coding Standards</a>
+      <a href="sce.html">Coding Environment</a>
     </li>
     <li>
-      <a href="sce.html">Coding Environment</a>
+      <a href="standards.html">Coding Standards</a>
     </li>
     <li>
       <a href="learning.html">Learning</a>
     </li>
   </ul>
-</li>
-<li>
-  <a href="glossary.html">Glossary</a>
 </li>
 <li>
   <a href="links.html">Useful Links</a>
@@ -299,63 +369,483 @@ $(document).ready(function () {
 
 <p>Here are all the links from across the team pages (and some extras)
 in one place for your convenience:</p>
-<ul>
-<li>Our Team
-<ul>
-<li><a
-href="https://defra.sharepoint.com/sites/Defraintranet/SitePages/Organisational-chart.aspx">Defra
-organogram</a></li>
-<li><a
-href="https://defra.sharepoint.com/teams/Team1478/Central%20PMO/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=40pAnJ&amp;cid=6748e449%2Da960%2D4705%2D9694%2D022465844f7d&amp;RootFolder=%2Fteams%2FTeam1478%2FCentral%20PMO%2F06%2E%20Resourcing%2F03%2E%20Resource%20%26%20Waste%20People%20%26%20Resourcing%2F1%2E%20Org%20Charts&amp;FolderCTID=0x012000A44110381EB3CB4C816BD7BB43BEA974&amp;OR=Teams%2DHL&amp;CT=1692001571358&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA3MDMwNzMzMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D">CPR
-organogram</a></li>
-<li><a
-href="https://defra.sharepoint.com/:p:/t/Team419/ET9BduVb5n1KoY1MRh_HzIgBpMcze0Na0iz3Zdlg0Xnljw?e=BgFqbk&amp;CID=400146ED-B571-496F-BA2F-ED9010488AF3&amp;wdLOR=c7120BEFD-55C0-4AC6-B916-B17122625B69">R&amp;WE
-organogram</a></li>
-<li><a
-href="https://defra-my.sharepoint.com/:p:/g/personal/tom_murray_defra_gov_uk/EcTYX_OX0qtEm0gN_GXgUQ4BBtZgG5OPmE02MVU76EEhGQ?e=KuEkTh&amp;CID=FFECBB6E-020D-486D-8BFD-26117AADF70F&amp;wdLOR=c84AF2036-EE62-4C16-A268-471DB21710F8">RaWE
-people profiles</a></li>
-</ul></li>
-<li>Our Work
-<ul>
-<li><a
-href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B14C0DDD3-867B-4EA2-BC52-CB7999CE1165%7D&amp;file=04%20Binned_Waste_Programme_POAP_LIVE.pptx&amp;action=edit&amp;mobileredirect=true&amp;PreviousSessionID=ebc4a168-d4bd-f4a1-e658-81828bc9da9f">Plan
-on a page</a></li>
-</ul></li>
-<li>Coding
-<ul>
-<li><a
-href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&amp;file=Coding%20Standards.pptx&amp;action=edit&amp;mobileredirect=true">Coding
-standards</a></li>
-<li><a
-href="https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&amp;CT=1684860172742&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29%2F18%20Module%20B1%20%2D%20LA%20FNCs%2F14%20Module%20B1%20Admin%2FCoding%20Environment&amp;viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4">Guidance</a></li>
-<li><a href="https://int-sce-network.awsapps.com/console">AWS
-console</a></li>
-<li><a
-href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">Data
-Log</a></li>
-<li><a
-href="https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd">Useful
-scripts repo</a></li>
-<li><a href="http://ranch-479.int.sce.network/rstudio/">R
-Studio</a></li>
-<li><a href="https://github.com/Defra-pEPR-Modelling-Team">Github
-organisation homepage</a></li>
-</ul></li>
-<li>Other
-<ul>
-<li><a href="https://jacobbillingham.shinyapps.io/WasteFlows/">Waste
-Flows Shiny App</a></li>
-<li><a
-href="https://jacobbillingham.shinyapps.io/CarbonVisualisations/">Carbon
-Emissions Shiny App</a></li>
-<li><a
-href="https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&amp;CT=1684860172742&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29&amp;viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4">Fees
-and Payments Calculator Sharepoint</a></li>
-</ul></li>
-</ul>
+<div id="bdgcscdaqc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bdgcscdaqc table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bdgcscdaqc thead, #bdgcscdaqc tbody, #bdgcscdaqc tfoot, #bdgcscdaqc tr, #bdgcscdaqc td, #bdgcscdaqc th {
+  border-style: none;
+}
+
+#bdgcscdaqc p {
+  margin: 0;
+  padding: 0;
+}
+
+#bdgcscdaqc .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#bdgcscdaqc .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#bdgcscdaqc .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#bdgcscdaqc .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#bdgcscdaqc .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bdgcscdaqc .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#bdgcscdaqc .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#bdgcscdaqc .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#bdgcscdaqc .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#bdgcscdaqc .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#bdgcscdaqc .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#bdgcscdaqc .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#bdgcscdaqc .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#bdgcscdaqc .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#bdgcscdaqc .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bdgcscdaqc .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#bdgcscdaqc .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#bdgcscdaqc .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#bdgcscdaqc .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bdgcscdaqc .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#bdgcscdaqc .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bdgcscdaqc .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#bdgcscdaqc .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bdgcscdaqc .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bdgcscdaqc .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bdgcscdaqc .gt_left {
+  text-align: left;
+}
+
+#bdgcscdaqc .gt_center {
+  text-align: center;
+}
+
+#bdgcscdaqc .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#bdgcscdaqc .gt_font_normal {
+  font-weight: normal;
+}
+
+#bdgcscdaqc .gt_font_bold {
+  font-weight: bold;
+}
+
+#bdgcscdaqc .gt_font_italic {
+  font-style: italic;
+}
+
+#bdgcscdaqc .gt_super {
+  font-size: 65%;
+}
+
+#bdgcscdaqc .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#bdgcscdaqc .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#bdgcscdaqc .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#bdgcscdaqc .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#bdgcscdaqc .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#bdgcscdaqc .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#bdgcscdaqc .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Page">Page</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Link">Link</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Page" class="gt_row gt_left"> Learning</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://defra.sharepoint.com/sites/Community448/SitePages/Discussion-Sessions-(Coffee-and-Coding).aspx">Defra’s monthly data science sessions</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left"> Learning</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://forms.office.com/pages/responsepage.aspx?id=BXCsy8EC60O0l-ZJLRst2KUXyeG5QzlKhk--pMPwnKxURTJXTTFZVjVQSFA2SE1ZSVNKRDE3NzBYTy4u">BEIS’s weekly Coffee and Coding sessions</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left"> Learning</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://www.datacamp.com/">DataCamp</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left"> Coding Environment</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://github.com/Defra-pEPR-Modelling-Team">organisation homepage</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left"> Coding Standards</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&amp;file=Coding%20Standards.pptx&amp;action=edit&amp;mobileredirect=true">here</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left"> Coding Standards</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">Duck Book</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left">Extras</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://jacobbillingham.shinyapps.io/WasteFlows/">Waste Flows Shiny App</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left">Extras</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://jacobbillingham.shinyapps.io/CarbonVisualisations/">Carbon Emissions Shiny App</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left">Extras</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&amp;CT=1684860172742&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29&amp;viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4">Fees and Payments Calculator Sharepoint</a></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -388,6 +878,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

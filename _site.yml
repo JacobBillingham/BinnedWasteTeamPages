@@ -8,8 +8,12 @@ output:
 navbar:
   title: "Module B Team Pages"
   left:
-    - text: "How We Work"
+    - text: "Sprint Timings"
       href: sprint.html
+    - text: "Pull Requests"
+      href: requests.html
+    - text: "Code Review"
+      href: review.html
     - text: "Coding"
       menu:
       - text: "Coding Environment"
@@ -18,8 +22,6 @@ navbar:
         href: standards.html
       - text: "Learning"
         href: learning.html  
-    - text: "Glossary"
-      href: glossary.html
     - text: "Useful Links"
       href: links.html
       

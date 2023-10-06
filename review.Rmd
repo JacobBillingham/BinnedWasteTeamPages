@@ -1,0 +1,14 @@
+---
+title: "Code Review"
+---
+
+Make sure you tick off this checklist before approving a code review:
+
+- [ ] Mercury
+- [ ] Venus
+- [ ] Earth (Orbit/Moon)
+- [ ] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune

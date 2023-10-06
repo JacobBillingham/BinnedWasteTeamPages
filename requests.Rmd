@@ -1,0 +1,23 @@
+---
+title: "Pull Requests"
+---
+
+We use Github for version control, collaboration and code reviews.
+
+Here are the step-by-step instructions to submit a pull request:
+
+1. Do something
+1. Do something
+1. Do something
+1. Do something
+
+Make sure you tick off this checklist before submitting a pull request:
+
+- [ ] Mercury
+- [ ] Venus
+- [ ] Earth (Orbit/Moon)
+- [ ] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
