@@ -1,0 +1,35 @@
+---
+title: "How to use Github"
+---
+
+# How to clone a repository
+
+'Cloning' a repository means creating a copy on your local machine that so you can run and edit the code in it!
+
+To clone a repository, follow these steps:
+
+1. First we need to generate a 'personal access token'. 
+    a. To do this go to [Github's token generator page](https://github.com/settings/tokens) and select ‘Generate new token’ then ‘Classic’.
+    b. You can then put anything in note, but make sure the gist, repo, user and workflow boxes are checked and click generate token. 
+    c. Make sure you copy and paste this token somewhere safe as you **won't be able to see it again**! We will need it later on and a lot in future
+    - Unless you have set it not to, eventually this token will expire will expire and you will need to create a new one.
+
+2.  Next obtain the address of the repository you want to clone. This can be found on the repository page on github by clicking the green "<> Code" button (it is usually the URL of the repo with ".git" at the end).
+
+<img src="/assets/img/repo_address_button.png"/>
+
+3. Next, in R Studio go to *‘File > New Project > Version Control > Git’* and paste in the address from the previous step. Then click 'Create project'.
+
+4. You have now succesfully cloned a repo into your R Studio. You should now be able to access the git tab in the top right window.
+    
+# How to edit code
+
+Once you have cloned a repo it is likely you will want to make some changes to the code in it. To do that follow these steps:
+
+1. For QA purposes we do not edit the *main* or *dev* branches directly, so you will need to create a branch of your own. To do that in R Studio click the ‘New Branch’ button in the Git window.
+
+<img src="/assets/img/new_branch_button.png"/>
+
+2. You should then name your branch the same as the Jira ticket you are working on, for instance "B1-20 Extract and reformat RFI data". Then click 'Create'. The branch name next to the 'New Branch' button should now have the name of your branch.
+
+3. Now is time for you to make your edits! 

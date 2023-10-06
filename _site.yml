@@ -8,11 +8,13 @@ output:
 navbar:
   title: "Module B Team Pages"
   left:
-    - text: "Sprint Timings"
+    - text: "How we run a sprint"
       href: sprint.html
-    - text: "Pull Requests"
+    - text: "How to use Github"
+      href: github.html
+    - text: "How to pull request"
       href: requests.html
-    - text: "Code Review"
+    - text: "How to code review"
       href: review.html
     - text: "Coding"
       menu:
