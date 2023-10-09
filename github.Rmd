@@ -18,7 +18,7 @@ To clone a repository, follow these steps:
 
 2.  Next obtain the address of the repository you want to clone. This can be found on the repository page on github by clicking the green "\<\> Code" button (it is usually the URL of the repo with ".git" at the end).
 
-![](~/module_b_team_pages/assets/repo_address_button.png)
+<img src="~/module_b_team_pages/assets/repo_address_button.png" width="258" height="238"/>
 
 3.  Next, in R Studio go to *'File \> New Project \> Version Control \> Git'* and paste in the address from the previous step. Then click 'Create project'.
 
@@ -32,7 +32,7 @@ Once you have cloned a repo it is likely you will want to make some changes to t
 
 1.  For QA purposes we do not edit the *main* or *dev* branches directly, so you will need to create a branch of your own. To do that in R Studio click the 'New Branch' button in the Git window.
 
-![](~/module_b_team_pages/assets/new_branch_button.png)
+<img src="~/module_b_team_pages/assets/new_branch_button.png"/>
 
 2.  You should then name your branch the same as the Jira ticket you are working on, for instance "B1-20 Extract and reformat RFI data". Then click 'Create'. The branch name next to the 'New Branch' button should now have the name of your branch.
 
