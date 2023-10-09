@@ -6,38 +6,44 @@ This [Github code review tutorial](https://www.youtube.com/watch?v=lSnbOtw4izI) 
 
 Make sure you tick off this checklist before approving a code review:
 
-- Understanding
+-   Understanding
 
-      <input type="checkbox"> Has a clear description of the code been provided?
-      <input type="checkbox"> Does the code do what is set out in the ticket?
-- Checking
+    <input type="checkbox"> Has a clear description of the code been provided?
+
+    <input type="checkbox"> Does the code do what is set out in the ticket?
+
+-   Checking
+
     <input type="checkbox"> Are imports done in the 'imports.R' file?
+
     <input type="checkbox"> Are outputs written to the right place in S3?
-    <input type="checkbox"> 
-- Code Standards
+
+    <input type="checkbox">
+
+-   Code Standards
+
     <input type="checkbox"> Is the code modularised into functions?
-    <input type="checkbox"> 
-    <input type="checkbox"> 
-- Quality Assurance
+
+    <input type="checkbox">
+
+    <input type="checkbox">
+
+-   Quality Assurance
+
     <input type="checkbox"> Has the coder updated the corresponding QA and assumptions logs?
-
-
-
-
-
 
 Follow these step-by-step instructions to do a proper code review:
 
 1.  Navigate to the '*pull request*' that has been assigned to you. Click '*Review changes*'
 
-![](~/module_b_team_pages/assets/review_changes_button.png)
+    ![](~/module_b_team_pages/assets/review_changes_button.png)
 
 2.  Make comments and suggestions as you see fit by clicking the blue plus to the left of the line you want to comment on. Make sure you tick off everything in the above checklist.
 
-![](~/module_b_team_pages/assets/add_comment_button.png)
+    ![](~/module_b_team_pages/assets/add_comment_button.png)
 
 3.  When you are ready click '*Finish your review*' add a summary comment and then click '*Submit review*'. You may choose to leave comments to be responded to, suggest changes to be made or simply approve the pull request straight away.
 
     a.  When you have approved the request you should also mark the review subtask on the Jira ticket as complete.
 
-<img src="~/module_b_team_pages/assets/finish_review.png" width="311" height="222"/>
+    <img src="~/module_b_team_pages/assets/finish_review.png" width="311" height="222"/>

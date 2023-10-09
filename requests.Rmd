@@ -4,25 +4,41 @@ title: "Pull Requests"
 
 We use Github for version control, collaboration and code reviews.
 
+# Checklist
+
 Make sure you tick off this **checklist** before submitting a pull request:
 
+-   Admin
+
 <input type="checkbox"> Have you provided the reviewer with a good description of what the code is meant to do?
-<input type="checkbox"> Have you commented throughout the code whenever logic is not obvious?
-<input type="checkbox"> Are the outputs reproducible i.e. will the code work the same on someone else's machine? 
-<input type="checkbox"> Is the code fully automated to prevent human error?
-<input type="checkbox"> Is your code in the right repo and folder within the repo?
+
 <input type="checkbox"> Have you updated the relevant quality assurance and assumptions logs?
+
+-   Code
+
+<input type="checkbox"> Have you commented throughout the code whenever logic is not obvious?
+
+<input type="checkbox"> Are the outputs reproducible i.e. will the code work the same on someone else's machine?
+
+<input type="checkbox"> Is the code fully automated to prevent human error?
+
+<input type="checkbox"> Is your code in the right repo and folder within that repo?
+
 <input type="checkbox"> Are your imports done from the '*imports.R*' file?
+
 <input type="checkbox"> Are your outputs written to the right place in S3?
 
 For future use:
 
-<input type="checkbox"> Have you documented all assumptions using the assumptions package?
-<input type="checkbox"> Does your code follow the coding standards?
-<input type="checkbox"> Does your code have adequate unit tests?
-<input type="checkbox"> Does your code and any input data have accompanying quality assurance reports?
-<input type="checkbox"> 
+<input type="checkbox"> Have you documented all assumptions using the assumptions package? 
 
+<input type="checkbox"> Does your code follow the coding standards? 
+
+<input type="checkbox"> Does your code have adequate unit tests? 
+
+<input type="checkbox"> Does your code and any input data have accompanying quality assurance reports? 
+
+# Instructions
 
 Here are the **step-by-step instructions** to submit a pull request:
 
@@ -36,7 +52,7 @@ Here are the **step-by-step instructions** to submit a pull request:
 
 3.  If your push was recent there may be a pop up allowing you to '*compare and pull request*', if not then click '*Contribute*' and '*Open pull request*'.
 
-![](~/module_b_team_pages/assets/contribute_button.png)
+    ![](~/module_b_team_pages/assets/contribute_button.png)
 
 4.  Now check your pull request is set up correctly:
 
@@ -54,4 +70,4 @@ Here are the **step-by-step instructions** to submit a pull request:
 
 6.  Your reviewer will then inspect your code and may ask you some questions or suggest some changes. Once you have responded to these they will approve your pull request and you can merge your changes!
 
-![](~/module_b_team_pages/assets/approved.png)
+    ![](~/module_b_team_pages/assets/approved.png)

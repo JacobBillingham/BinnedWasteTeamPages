@@ -16,7 +16,7 @@ To clone a repository, follow these steps:
 
 2.  Next obtain the address of the repository you want to clone. This can be found on the repository page on github by clicking the green "\<\> Code" button (it is usually the URL of the repo with ".git" at the end).
 
-<img src="~/module_b_team_pages/assets/repo_address_button.png" width="258" height="238"/>
+    <img src="~/module_b_team_pages/assets/repo_address_button.png" width="258" height="238"/>
 
 3.  Next, in R Studio go to *'File \> New Project \> Version Control \> Git'* and paste in the address from the previous step. Then click 'Create project'.
 

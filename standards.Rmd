@@ -39,8 +39,11 @@ select(...)
 </tr>
 </table>
 
-2. Variable names must make sense in plain English e.g. `localAuthorityPopulation` not `lapop`.
-3. We use camelCase e.g. `localAuthorityPopulation` not `local_authority_population`.
+2. Packages should only be those available on [CRAN](https://cran.r-project.org/) 
+3. Generally we should be using the pipe operator (`%>%`) and tidyverse packages rather than loops. This means we need to load the `magrittr` package.
+4. Variable names must make sense in plain English e.g. `localAuthorityPopulation` not `lapop`.
+5. We use camelCase e.g. `localAuthorityPopulation` not `local_authority_population`.
+6. We should modularise our code as much as possible, i.e. discrete parts of the code that do a particular job should be contained in a function. The end goal is to have the whole model run from one main file that calls functions.
 
 # Naming Conventions
 

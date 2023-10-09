@@ -13,9 +13,9 @@ navbar:
     - text: "How to..."
       menu:
       - text: "...set up Github"
-        href: github-setup.html
+        href: setup.html
       - text: "...edit Github code"
-        href: github-edit.html
+        href: edit.html
       - text: "...pull request"
         href: requests.html
       - text: "...code review"

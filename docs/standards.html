@@ -346,10 +346,19 @@ select(...)</code></pre>
 </tr>
 </table>
 <ol start="2" style="list-style-type: decimal">
+<li>Packages should only be those available on <a
+href="https://cran.r-project.org/">CRAN</a></li>
+<li>Generally we should be using the pipe operator (<code>%&gt;%</code>)
+and tidyverse packages rather than loops. This means we need to load the
+<code>magrittr</code> package.</li>
 <li>Variable names must make sense in plain English
 e.g. <code>localAuthorityPopulation</code> not <code>lapop</code>.</li>
 <li>We use camelCase e.g. <code>localAuthorityPopulation</code> not
 <code>local_authority_population</code>.</li>
+<li>We should modularise our code as much as possible, i.e. discrete
+parts of the code that do a particular job should be contained in a
+function. The end goal is to have the whole model run from one main file
+that calls functions.</li>
 </ol>
 <div id="naming-conventions" class="section level1">
 <h1>Naming Conventions</h1>
