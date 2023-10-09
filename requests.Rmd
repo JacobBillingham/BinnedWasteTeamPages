@@ -4,10 +4,38 @@ title: "Pull Requests"
 
 We use Github for version control, collaboration and code reviews.
 
-Here are the step-by-step instructions to submit a pull request:
-
-1.  Follow the steps on the 'How to 
-
-Make sure you tick off this checklist before submitting a pull request:
+Make sure you tick off this **checklist** before submitting a pull request:
 
 <input type="checkbox"> Check this
+
+Here are the **step-by-step instructions** to submit a pull request:
+
+1.  Follow the steps on the 'How to edit Github code' to make the changes for your ticket
+
+2.  Then go to the relevant repo on Github and navigate to your branch
+
+    a.  Use either the branches drop down or click on '*x branches*' to go to the branches page and select your branch.
+
+    ![](~/module_b_team_pages/assets/branches_button.png)
+
+3.  If your push was recent there may be a pop up allowing you to '*compare and pull request*', if not then click '*Contribute*' and '*Open pull request*'.
+
+![](~/module_b_team_pages/assets/contribute_button.png)
+
+4.  Now check your pull request is set up correctly:
+
+    a.  Make sure you are merging to the correct branch, this will usually be *dev* (for code in development) or sometimes *main* if it has been fully quality assured.
+    b.  Click '*Reviewer*' and select the person who has agreed to review your code.
+    c.  Make sure your pull request has a title and description that will allow the reviewer to understand what you have done.
+    d.  You can also check that the correct files have changed at the bottom of the page.
+    e.  You will also need to check there are no 'merge conflicts'. This is where someone has changed the same files as you and so you need to agree with that person what are the correct changes and modify accordingly, the screenshot below shows '*Able to merge*' indicating there are no conflicts.
+
+    ![](~/module_b_team_pages/assets/pull_request.png)
+
+5.  Before submitting your pull request once again make sure you have ticked all the boxes at the top of of this page! Then you can click '*Create pull request*'.
+
+    a.  Once you have created the pull request you should move the ticket to 'For Review' on Jira. You should then create a subtask by clicking '*Add child issue*' and assign this subtask to your reviewer.
+
+6.  Your reviewer will then inspect your code and may ask you some questions or suggest some changes. Once you have responded to these they will approve your pull request and you can merge your changes!
+
+![](~/module_b_team_pages/assets/approved.png)
