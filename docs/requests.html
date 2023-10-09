@@ -258,9 +258,6 @@ $(document).ready(function () {
       <a href="github-setup.html">...set up Github</a>
     </li>
     <li>
-      <a href="github-setup.html">CHECK</a>
-    </li>
-    <li>
       <a href="github-edit.html">...edit Github code</a>
     </li>
     <li>
@@ -316,7 +313,23 @@ $(document).ready(function () {
 reviews.</p>
 <p>Make sure you tick off this <strong>checklist</strong> before
 submitting a pull request:</p>
-<p><input type="checkbox"> Check this</p>
+<p><input type="checkbox"> Have you provided the reviewer with a good
+description of what the code is meant to do? <input type="checkbox">
+Have you commented throughout the code whenever logic is not obvious?
+<input type="checkbox"> Are the outputs reproducible i.e. will the code
+work the same on someone else’s machine? <input type="checkbox"> Is the
+code fully automated to prevent human error? <input type="checkbox"> Is
+your code in the right repo and folder within the repo?
+<input type="checkbox"> Have you updated the relevant quality assurance
+and assumptions logs? <input type="checkbox"> Are your imports done from
+the ‘<em>imports.R</em>’ file? <input type="checkbox"> Are your outputs
+written to the right place in S3?</p>
+<p>For future use:</p>
+<p><input type="checkbox"> Have you documented all assumptions using the
+assumptions package? <input type="checkbox"> Does your code follow the
+coding standards? <input type="checkbox"> Does your code have adequate
+unit tests? <input type="checkbox"> Does your code and any input data
+have accompanying quality assurance reports? <input type="checkbox"></p>
 <p>Here are the <strong>step-by-step instructions</strong> to submit a
 pull request:</p>
 <ol style="list-style-type: decimal">

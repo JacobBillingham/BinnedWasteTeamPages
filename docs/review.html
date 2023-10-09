@@ -258,9 +258,6 @@ $(document).ready(function () {
       <a href="github-setup.html">...set up Github</a>
     </li>
     <li>
-      <a href="github-setup.html">CHECK</a>
-    </li>
-    <li>
       <a href="github-edit.html">...edit Github code</a>
     </li>
     <li>
@@ -317,15 +314,17 @@ code review tutorial</a> shows you how to review a pull request, or you
 can follow the steps at the bottom of this page.</p>
 <p>Make sure you tick off this checklist before approving a code
 review:</p>
-<ul class="task-list">
-<li><input type="checkbox" disabled="" />Mercury</li>
-<li><input type="checkbox" disabled="" />Venus</li>
-<li><input type="checkbox" disabled="" />Earth (Orbit/Moon)</li>
-<li><input type="checkbox" disabled="" />Mars</li>
-<li><input type="checkbox" disabled="" />Jupiter</li>
-<li><input type="checkbox" disabled="" />Saturn</li>
-<li><input type="checkbox" disabled="" />Uranus</li>
-<li><input type="checkbox" disabled="" />Neptune</li>
+<ul>
+<li><p>Understanding</p>
+<pre><code>&lt;input type=&quot;checkbox&quot;&gt; Has a clear description of the code been provided?
+&lt;input type=&quot;checkbox&quot;&gt; Does the code do what is set out in the ticket?</code></pre></li>
+<li><p>Checking <input type="checkbox"> Are imports done in the
+‘imports.R’ file? <input type="checkbox"> Are outputs written to the
+right place in S3? <input type="checkbox"></p></li>
+<li><p>Code Standards <input type="checkbox"> Is the code modularised
+into functions? <input type="checkbox"> <input type="checkbox"></p></li>
+<li><p>Quality Assurance <input type="checkbox"> Has the coder updated
+the corresponding QA and assumptions logs?</p></li>
 </ul>
 <p>Follow these step-by-step instructions to do a proper code
 review:</p>
