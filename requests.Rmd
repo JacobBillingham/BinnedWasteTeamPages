@@ -6,18 +6,8 @@ We use Github for version control, collaboration and code reviews.
 
 Here are the step-by-step instructions to submit a pull request:
 
-1.  Do something
-2.  Do something
-3.  Do something
-4.  Do something
+1.  Follow the steps on the 'How to 
 
 Make sure you tick off this checklist before submitting a pull request:
 
--   [ ] Mercury
--   [ ] Venus
--   [ ] Earth (Orbit/Moon)
--   [ ] Mars
--   [ ] Jupiter
--   [ ] Saturn
--   [ ] Uranus
--   [ ] Neptune
+<input type="checkbox"> Check this

@@ -13,7 +13,9 @@ navbar:
     - text: "How to..."
       menu:
       - text: "...set up Github"
-        href: github.html
+        href: github-setup.html
+      - text: "...edit Github code"
+        href: github-edit.html
       - text: "...pull request"
         href: requests.html
       - text: "...code review"
@@ -24,6 +26,8 @@ navbar:
         href: sce.html      
       - text: "Coding Standards"
         href: standards.html
+      - text: "Data"
+        href: data.html
       - text: "Learning"
         href: learning.html  
     - text: "Useful Links"
