@@ -2,13 +2,31 @@
 title: "Code Review"
 ---
 
+This [Github code review tutorial](https://www.youtube.com/watch?v=lSnbOtw4izI) shows you how to review a pull request, or you can follow the steps at the bottom of this page.
+
 Make sure you tick off this checklist before approving a code review:
 
-- [ ] Mercury
-- [ ] Venus
-- [ ] Earth (Orbit/Moon)
-- [ ] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
+-   [ ] Mercury
+-   [ ] Venus
+-   [ ] Earth (Orbit/Moon)
+-   [ ] Mars
+-   [ ] Jupiter
+-   [ ] Saturn
+-   [ ] Uranus
+-   [ ] Neptune
+
+Follow these step-by-step instructions to do a proper code review:
+
+1.  Navigate to the '*pull request*' that has been assigned to you. Click '*Review changes*'
+
+![](~/module_b_team_pages/assets/review_changes_button.png)
+
+2.  Make comments and suggestions as you see fit by clicking the blue plus to the left of the line you want to comment on. Make sure you tick off everything in the above checklist.
+
+![](~/module_b_team_pages/assets/add_comment_button.png)
+
+3.  When you are ready click '*Finish your review*' add a summary comment and then click '*Submit review*'. You may choose to leave comments to be responded to, suggest changes to be made or simply approve the pull request straight away.
+
+    a.  When you have approved the request you should also mark the review subtask on the Jira ticket as complete.
+
+<img src="~/module_b_team_pages/assets/finish_review.png" width="311" height="222"/>

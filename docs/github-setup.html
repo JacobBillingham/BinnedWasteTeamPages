@@ -11,7 +11,7 @@
 
 
 
-<title>How to use Github</title>
+<title>How to set up Github</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -304,15 +304,15 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">How to use Github</h1>
+<h1 class="title toc-ignore">How to set up Github</h1>
 
 </div>
 
 
-<div id="how-to-clone-a-repository" class="section level1">
-<h1>How to clone a repository</h1>
-<p>‘Cloning’ a repository means creating a copy on your local machine
-that so you can run and edit the code in it!</p>
+<p>In order to work with code that is stored on Github in R Studio we
+need to ‘clone’ the relevant repository. ‘Cloning’ a repository means
+creating a copy on your local machine that so you can run and edit the
+code in it!</p>
 <p>To clone a repository, follow these steps:</p>
 <ol style="list-style-type: decimal">
 <li><p>First we need to generate a ‘personal access token’.</p>
@@ -347,71 +347,8 @@ clone a repository’</strong>.</p></li>
 should now be able to access the git tab in the top right
 window.</p></li>
 </ol>
-</div>
-<div id="how-to-edit-code" class="section level1">
-<h1>How to edit code</h1>
-<p>Once you have cloned a repo it is likely you will want to make some
-changes to the code in it. To do that follow these steps:</p>
-<ol style="list-style-type: decimal">
-<li>For QA purposes we do not edit the <em>main</em> or <em>dev</em>
-branches directly, so you will need to create a branch of your own. To
-do that in R Studio click the ‘New Branch’ button in the Git
-window.</li>
-</ol>
-<p><img src="assets/new_branch_button.png"/></p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>You should then name your branch the same as the Jira ticket you
-are working on, for instance “B1-20 Extract and reformat RFI data”. Then
-click ‘Create’. The branch name next to the ‘New Branch’ button should
-now have the name of your branch.</p></li>
-<li><p>Now is time for you to make your edits! Make any changes you need
-and frequently ‘commit’ (this is explained in the next step).</p></li>
-<li><p>When you make and save some changes Git will notice, so any
-changed files will appear in the Git window. Committing is like telling
-git those changes are ready to be uploaded to Github (which will happen
-in the next step). To commit:</p>
-<ol style="list-style-type: lower-alpha">
-<li>Tick the box in the Git window for the files you wish to
-commit.</li>
-<li>Click the commit button.</li>
-</ol>
-<p><img src="assets/commit_button.png" /></p>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>In the window that opens, review your changes are as intended.</li>
-<li>Then add a ‘Commit message’ explaining what you have done, and click
-commit underneath.</li>
-<li>Close the window and go back to making changes.</li>
-</ol></li>
-</ol>
-<ul>
-<li>It is good practice to <strong>commit frequently</strong> so your
-changes are logged incrementally on Github.</li>
-</ul>
-<ol start="5" style="list-style-type: decimal">
-<li><p>Once you have committed all the changes you need, we can ‘push’
-them to Github. You should do this once you have finished a ticket and
-whenever you stop working on the code e.g. for a meeting, to have lunch
-or at the end of the day. Follow these steps:</p>
-<ol style="list-style-type: lower-alpha">
-<li>Firstly it is good practice to ‘pull’ to check no-one has changed
-our branch whilst we were working. Click the ‘Pull’ button and if
-prompted enter your Github username <strong>but instead of our password
-we need to use the token we generated in step 1 of ‘How to clone a
-repository’</strong>. Close any the Git pull pop-up.</li>
-</ol>
-<p><img src="assets/pull_button.png" /></p>
-<ol start="2" style="list-style-type: lower-alpha">
-<li>Now we are ready to ‘push’, click the ‘Push’ button and once again
-if prompted enter your Github username <strong>but instead of our
-password we need to use the token we generated in step 1 of ‘How to
-clone a repository’</strong>.</li>
-</ol>
-<p><img src="assets/push_button.png" /></p>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>You have now successfully pushed your changes to Github.</li>
-</ol></li>
-</ol>
-</div>
+<p>To make changes to the code follow the steps on the “How to edit
+Github code” page.</p>
 
 
 

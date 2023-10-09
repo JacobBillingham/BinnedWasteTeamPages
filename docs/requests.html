@@ -311,13 +311,60 @@ $(document).ready(function () {
 
 <p>We use Github for version control, collaboration and code
 reviews.</p>
-<p>Here are the step-by-step instructions to submit a pull request:</p>
-<ol style="list-style-type: decimal">
-<li>Follow the steps on the ’How to</li>
-</ol>
-<p>Make sure you tick off this checklist before submitting a pull
-request:</p>
+<p>Make sure you tick off this <strong>checklist</strong> before
+submitting a pull request:</p>
 <p><input type="checkbox"> Check this</p>
+<p>Here are the <strong>step-by-step instructions</strong> to submit a
+pull request:</p>
+<ol style="list-style-type: decimal">
+<li><p>Follow the steps on the ‘How to edit Github code’ to make the
+changes for your ticket</p></li>
+<li><p>Then go to the relevant repo on Github and navigate to your
+branch</p>
+<ol style="list-style-type: lower-alpha">
+<li>Use either the branches drop down or click on ‘<em>x branches</em>’
+to go to the branches page and select your branch.</li>
+</ol>
+<p><img
+src="assets/branches_button.png" /></p></li>
+<li><p>If your push was recent there may be a pop up allowing you to
+‘<em>compare and pull request</em>’, if not then click
+‘<em>Contribute</em>’ and ‘<em>Open pull request</em>’.</p></li>
+</ol>
+<p><img src="assets/contribute_button.png" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Now check your pull request is set up correctly:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Make sure you are merging to the correct branch, this will usually
+be <em>dev</em> (for code in development) or sometimes <em>main</em> if
+it has been fully quality assured.</li>
+<li>Click ‘<em>Reviewer</em>’ and select the person who has agreed to
+review your code.</li>
+<li>Make sure your pull request has a title and description that will
+allow the reviewer to understand what you have done.</li>
+<li>You can also check that the correct files have changed at the bottom
+of the page.</li>
+<li>You will also need to check there are no ‘merge conflicts’. This is
+where someone has changed the same files as you and so you need to agree
+with that person what are the correct changes and modify accordingly,
+the screenshot below shows ‘<em>Able to merge</em>’ indicating there are
+no conflicts.</li>
+</ol>
+<p><img src="assets/pull_request.png" /></p></li>
+<li><p>Before submitting your pull request once again make sure you have
+ticked all the boxes at the top of of this page! Then you can click
+‘<em>Create pull request</em>’.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Once you have created the pull request you should move the ticket to
+‘For Review’ on Jira. You should then create a subtask by clicking
+‘<em>Add child issue</em>’ and assign this subtask to your
+reviewer.</li>
+</ol></li>
+<li><p>Your reviewer will then inspect your code and may ask you some
+questions or suggest some changes. Once you have responded to these they
+will approve your pull request and you can merge your changes!</p></li>
+</ol>
+<p><img src="assets/approved.png" /></p>
 
 
 
