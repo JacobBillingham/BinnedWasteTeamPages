@@ -11,7 +11,7 @@
 
 
 
-<title>Learning</title>
+<title>Data</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -298,24 +298,31 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Learning</h1>
+<h1 class="title toc-ignore">Data</h1>
 
 </div>
 
 
-<p>Here are a number of resources you can use to help improve your
-coding:</p>
-<ul>
-<li><a
-href="https://defra.sharepoint.com/sites/Community448/SitePages/Discussion-Sessions-(Coffee-and-Coding).aspx">Defra’s
-monthly data science sessions</a></li>
-<li><a
-href="https://forms.office.com/pages/responsepage.aspx?id=BXCsy8EC60O0l-ZJLRst2KUXyeG5QzlKhk--pMPwnKxURTJXTTFZVjVQSFA2SE1ZSVNKRDE3NzBYTy4u">BEIS’s
-weekly Coffee and Coding sessions</a></li>
-<li><a href="https://www.datacamp.com/">DataCamp</a> (Defra has
-unlimited DataCamp licenses, so anyone in Defra can sign up for a pro
-account)</li>
-</ul>
+<div id="s3" class="section level1">
+<h1>S3</h1>
+<p>S3 is accessed through the <a
+href="https://int-sce-network.awsapps.com/console">AWS console</a>. When
+we upload, modify or delete data on S3, this must be recorded in the <a
+href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">Data
+Log</a>.</p>
+<p><strong>All binned waste data</strong> should be stored in the
+‘moduleB2’ folder at: <em>s3://s3-ranch-043/moduleB2/</em>.</p>
+<p>Scripts for reading and writing to AWS can be found in the <a
+href="https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd">useful
+scripts repo</a>. Here is an example of <strong>reading</strong> an
+<strong>Excel</strong> file:</p>
+<pre class="r"><code>excel_data &lt;- aws.s3::s3read_using(
+  FUN = openxlsx::read.xlsx,
+  object = &quot;test_folder/test_data.xlsx&quot;, # this file exists, but replace with your own filepath
+  sheet=&quot;Sheet1&quot;,
+  fillMergedCells = TRUE,
+  bucket = &quot;s3-ranch-043&quot;)</code></pre>
+</div>
 
 
 

@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -224,69 +221,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -294,16 +228,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -321,13 +245,25 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="requests.html">Pull Requests</a>
+  <a href="sprint.html">Sprints</a>
 </li>
-<li>
-  <a href="review.html">Code Review</a>
-</li>
-<li>
-  <a href="sprint.html">Timings</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    How to...
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="github.html">...set up Github</a>
+    </li>
+    <li>
+      <a href="requests.html">...pull request</a>
+    </li>
+    <li>
+      <a href="review.html">...code review</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -369,23 +305,23 @@ div.tocify {
 
 <p>Here are all the links from across the team pages (and some extras)
 in one place for your convenience:</p>
-<div id="bdgcscdaqc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bdgcscdaqc table {
+<div id="yagtcitrbp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yagtcitrbp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bdgcscdaqc thead, #bdgcscdaqc tbody, #bdgcscdaqc tfoot, #bdgcscdaqc tr, #bdgcscdaqc td, #bdgcscdaqc th {
+#yagtcitrbp thead, #yagtcitrbp tbody, #yagtcitrbp tfoot, #yagtcitrbp tr, #yagtcitrbp td, #yagtcitrbp th {
   border-style: none;
 }
 
-#bdgcscdaqc p {
+#yagtcitrbp p {
   margin: 0;
   padding: 0;
 }
 
-#bdgcscdaqc .gt_table {
+#yagtcitrbp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -411,12 +347,12 @@ in one place for your convenience:</p>
   border-left-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_caption {
+#yagtcitrbp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bdgcscdaqc .gt_title {
+#yagtcitrbp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -428,7 +364,7 @@ in one place for your convenience:</p>
   border-bottom-width: 0;
 }
 
-#bdgcscdaqc .gt_subtitle {
+#yagtcitrbp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -440,7 +376,7 @@ in one place for your convenience:</p>
   border-top-width: 0;
 }
 
-#bdgcscdaqc .gt_heading {
+#yagtcitrbp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -452,13 +388,13 @@ in one place for your convenience:</p>
   border-right-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_bottom_border {
+#yagtcitrbp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_col_headings {
+#yagtcitrbp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -473,7 +409,7 @@ in one place for your convenience:</p>
   border-right-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_col_heading {
+#yagtcitrbp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -493,7 +429,7 @@ in one place for your convenience:</p>
   overflow-x: hidden;
 }
 
-#bdgcscdaqc .gt_column_spanner_outer {
+#yagtcitrbp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -505,15 +441,15 @@ in one place for your convenience:</p>
   padding-right: 4px;
 }
 
-#bdgcscdaqc .gt_column_spanner_outer:first-child {
+#yagtcitrbp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bdgcscdaqc .gt_column_spanner_outer:last-child {
+#yagtcitrbp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bdgcscdaqc .gt_column_spanner {
+#yagtcitrbp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -525,11 +461,11 @@ in one place for your convenience:</p>
   width: 100%;
 }
 
-#bdgcscdaqc .gt_spanner_row {
+#yagtcitrbp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bdgcscdaqc .gt_group_heading {
+#yagtcitrbp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,7 +491,7 @@ in one place for your convenience:</p>
   text-align: left;
 }
 
-#bdgcscdaqc .gt_empty_group_heading {
+#yagtcitrbp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -570,15 +506,15 @@ in one place for your convenience:</p>
   vertical-align: middle;
 }
 
-#bdgcscdaqc .gt_from_md > :first-child {
+#yagtcitrbp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bdgcscdaqc .gt_from_md > :last-child {
+#yagtcitrbp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bdgcscdaqc .gt_row {
+#yagtcitrbp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -597,7 +533,7 @@ in one place for your convenience:</p>
   overflow-x: hidden;
 }
 
-#bdgcscdaqc .gt_stub {
+#yagtcitrbp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -610,7 +546,7 @@ in one place for your convenience:</p>
   padding-right: 5px;
 }
 
-#bdgcscdaqc .gt_stub_row_group {
+#yagtcitrbp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -624,15 +560,15 @@ in one place for your convenience:</p>
   vertical-align: top;
 }
 
-#bdgcscdaqc .gt_row_group_first td {
+#yagtcitrbp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bdgcscdaqc .gt_row_group_first th {
+#yagtcitrbp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bdgcscdaqc .gt_summary_row {
+#yagtcitrbp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -642,16 +578,16 @@ in one place for your convenience:</p>
   padding-right: 5px;
 }
 
-#bdgcscdaqc .gt_first_summary_row {
+#yagtcitrbp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_first_summary_row.thick {
+#yagtcitrbp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bdgcscdaqc .gt_last_summary_row {
+#yagtcitrbp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -661,7 +597,7 @@ in one place for your convenience:</p>
   border-bottom-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_grand_summary_row {
+#yagtcitrbp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -671,7 +607,7 @@ in one place for your convenience:</p>
   padding-right: 5px;
 }
 
-#bdgcscdaqc .gt_first_grand_summary_row {
+#yagtcitrbp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -681,7 +617,7 @@ in one place for your convenience:</p>
   border-top-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_last_grand_summary_row_top {
+#yagtcitrbp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -691,11 +627,11 @@ in one place for your convenience:</p>
   border-bottom-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_striped {
+#yagtcitrbp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bdgcscdaqc .gt_table_body {
+#yagtcitrbp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -704,7 +640,7 @@ in one place for your convenience:</p>
   border-bottom-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_footnotes {
+#yagtcitrbp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -718,7 +654,7 @@ in one place for your convenience:</p>
   border-right-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_footnote {
+#yagtcitrbp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -727,7 +663,7 @@ in one place for your convenience:</p>
   padding-right: 5px;
 }
 
-#bdgcscdaqc .gt_sourcenotes {
+#yagtcitrbp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -741,7 +677,7 @@ in one place for your convenience:</p>
   border-right-color: #D3D3D3;
 }
 
-#bdgcscdaqc .gt_sourcenote {
+#yagtcitrbp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -749,63 +685,63 @@ in one place for your convenience:</p>
   padding-right: 5px;
 }
 
-#bdgcscdaqc .gt_left {
+#yagtcitrbp .gt_left {
   text-align: left;
 }
 
-#bdgcscdaqc .gt_center {
+#yagtcitrbp .gt_center {
   text-align: center;
 }
 
-#bdgcscdaqc .gt_right {
+#yagtcitrbp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bdgcscdaqc .gt_font_normal {
+#yagtcitrbp .gt_font_normal {
   font-weight: normal;
 }
 
-#bdgcscdaqc .gt_font_bold {
+#yagtcitrbp .gt_font_bold {
   font-weight: bold;
 }
 
-#bdgcscdaqc .gt_font_italic {
+#yagtcitrbp .gt_font_italic {
   font-style: italic;
 }
 
-#bdgcscdaqc .gt_super {
+#yagtcitrbp .gt_super {
   font-size: 65%;
 }
 
-#bdgcscdaqc .gt_footnote_marks {
+#yagtcitrbp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bdgcscdaqc .gt_asterisk {
+#yagtcitrbp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bdgcscdaqc .gt_indent_1 {
+#yagtcitrbp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bdgcscdaqc .gt_indent_2 {
+#yagtcitrbp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bdgcscdaqc .gt_indent_3 {
+#yagtcitrbp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bdgcscdaqc .gt_indent_4 {
+#yagtcitrbp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bdgcscdaqc .gt_indent_5 {
+#yagtcitrbp .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -818,16 +754,14 @@ in one place for your convenience:</p>
     </tr>
   </thead>
   <tbody class="gt_table_body">
+    <tr><td headers="Page" class="gt_row gt_left"> How to use Github</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://github.com/settings/tokens">Github’s token generator page</a></td></tr>
     <tr><td headers="Page" class="gt_row gt_left"> Learning</td>
 <td headers="Link" class="gt_row gt_center"><a href="https://defra.sharepoint.com/sites/Community448/SitePages/Discussion-Sessions-(Coffee-and-Coding).aspx">Defra’s monthly data science sessions</a></td></tr>
     <tr><td headers="Page" class="gt_row gt_left"> Learning</td>
 <td headers="Link" class="gt_row gt_center"><a href="https://forms.office.com/pages/responsepage.aspx?id=BXCsy8EC60O0l-ZJLRst2KUXyeG5QzlKhk--pMPwnKxURTJXTTFZVjVQSFA2SE1ZSVNKRDE3NzBYTy4u">BEIS’s weekly Coffee and Coding sessions</a></td></tr>
     <tr><td headers="Page" class="gt_row gt_left"> Learning</td>
 <td headers="Link" class="gt_row gt_center"><a href="https://www.datacamp.com/">DataCamp</a></td></tr>
-    <tr><td headers="Page" class="gt_row gt_left"> Coding Environment</td>
-<td headers="Link" class="gt_row gt_center"><a href="https://github.com/Defra-pEPR-Modelling-Team">organisation homepage</a></td></tr>
-    <tr><td headers="Page" class="gt_row gt_left"> Coding Standards</td>
-<td headers="Link" class="gt_row gt_center"><a href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&amp;file=Coding%20Standards.pptx&amp;action=edit&amp;mobileredirect=true">here</a></td></tr>
     <tr><td headers="Page" class="gt_row gt_left"> Coding Standards</td>
 <td headers="Link" class="gt_row gt_center"><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">Duck Book</a></td></tr>
     <tr><td headers="Page" class="gt_row gt_left">Extras</td>
@@ -836,6 +770,8 @@ in one place for your convenience:</p>
 <td headers="Link" class="gt_row gt_center"><a href="https://jacobbillingham.shinyapps.io/CarbonVisualisations/">Carbon Emissions Shiny App</a></td></tr>
     <tr><td headers="Page" class="gt_row gt_left">Extras</td>
 <td headers="Link" class="gt_row gt_center"><a href="https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&amp;CT=1684860172742&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29&amp;viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4">Fees and Payments Calculator Sharepoint</a></td></tr>
+    <tr><td headers="Page" class="gt_row gt_left">Extras</td>
+<td headers="Link" class="gt_row gt_center"><a href="https://ctaylor-defra.shinyapps.io/shiny_plot/">LA Grouping Shiny App</a></td></tr>
   </tbody>
   
   
@@ -844,8 +780,6 @@ in one place for your convenience:</p>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -878,35 +812,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

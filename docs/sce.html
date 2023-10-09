@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -224,69 +221,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -294,16 +228,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -321,13 +245,25 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="requests.html">Pull Requests</a>
+  <a href="sprint.html">Sprints</a>
 </li>
-<li>
-  <a href="review.html">Code Review</a>
-</li>
-<li>
-  <a href="sprint.html">Timings</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    How to...
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="github.html">...set up Github</a>
+    </li>
+    <li>
+      <a href="requests.html">...pull request</a>
+    </li>
+    <li>
+      <a href="review.html">...code review</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -371,45 +307,13 @@ div.tocify {
 allows us to write and run code on Amazon Web Service’s EC2 virtual
 machines, and store our data using Amazon Web Services S3. Speak to the
 SCE admins (Ope and Jake as of September 2023) if you are not set up on
-the SCE. Guidance documents can be found at on <a
-href="https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&amp;CT=1684860172742&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29%2F18%20Module%20B1%20%2D%20LA%20FNCs%2F14%20Module%20B1%20Admin%2FCoding%20Environment&amp;viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4">Sharepoint</a>.</p>
-<div id="s3" class="section level1">
-<h1>S3</h1>
-<p>S3 is accessed through the <a
-href="https://int-sce-network.awsapps.com/console">AWS console</a>. When
-we upload, modify or delete data on S3, this must be recorded in the <a
-href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">Data
-Log</a>.</p>
-<p><strong>All binned waste data</strong> should be stored in the
-‘moduleB2’ folder at: <em>s3://s3-ranch-043/moduleB2/</em>.</p>
-<p>Scripts for reading and writing to AWS can be found in the <a
-href="https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd">useful
-scripts repo</a>. Here is an example of <strong>reading</strong> an
-<strong>Excel</strong> file:</p>
-<pre class="r"><code>excel_data &lt;- aws.s3::s3read_using(
-  FUN = openxlsx::read.xlsx,
-  object = &quot;test_folder/test_data.xlsx&quot;, # this file exists, but replace with your own filepath
-  sheet=&quot;Sheet1&quot;,
-  fillMergedCells = TRUE,
-  bucket = &quot;s3-ranch-043&quot;)</code></pre>
-</div>
-<div id="r-studio" class="section level1">
-<h1>R Studio</h1>
+the SCE.</p>
 <p>We can use <a href="http://ranch-479.int.sce.network/rstudio/">R
 Studio on our virtual machine</a>. This is available 8am - 8pm
 daily.</p>
-</div>
-<div id="github" class="section level1">
-<h1>Github</h1>
-<p>We use Github for version control, collaboration and code reviews.
-Our <a href="https://github.com/Defra-pEPR-Modelling-Team">organisation
-homepage</a> has information on how to do all of these.</p>
-</div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -442,35 +346,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
