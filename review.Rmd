@@ -18,15 +18,9 @@ Make sure you tick off this checklist before approving a code review:
 
     <input type="checkbox"> Are outputs written to the right place in S3?
 
-    <input type="checkbox">
-
 -   Code Standards
 
     <input type="checkbox"> Is the code modularised into functions?
-
-    <input type="checkbox">
-
-    <input type="checkbox">
 
 -   Quality Assurance
 

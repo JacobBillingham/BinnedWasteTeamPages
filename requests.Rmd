@@ -28,15 +28,15 @@ Make sure you tick off this **checklist** before submitting a pull request:
 
 <input type="checkbox"> Are your outputs written to the right place in S3?
 
-For future use:
+- For future use:
 
-<input type="checkbox"> Have you documented all assumptions using the assumptions package? 
+<input type="checkbox"> Have you documented all assumptions using the assumptions package?
 
-<input type="checkbox"> Does your code follow the coding standards? 
+<input type="checkbox"> Does your code follow the coding standards?
 
-<input type="checkbox"> Does your code have adequate unit tests? 
+<input type="checkbox"> Does your code have adequate unit tests?
 
-<input type="checkbox"> Does your code and any input data have accompanying quality assurance reports? 
+<input type="checkbox"> Does your code and any input data have accompanying quality assurance reports?
 
 # Instructions
 

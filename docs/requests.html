@@ -255,10 +255,10 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="github-setup.html">...set up Github</a>
+      <a href="setup.html">...set up Github</a>
     </li>
     <li>
-      <a href="github-edit.html">...edit Github code</a>
+      <a href="edit.html">...edit Github code</a>
     </li>
     <li>
       <a href="requests.html">...pull request</a>
@@ -311,25 +311,45 @@ $(document).ready(function () {
 
 <p>We use Github for version control, collaboration and code
 reviews.</p>
+<div id="checklist" class="section level1">
+<h1>Checklist</h1>
 <p>Make sure you tick off this <strong>checklist</strong> before
 submitting a pull request:</p>
+<ul>
+<li>Admin</li>
+</ul>
 <p><input type="checkbox"> Have you provided the reviewer with a good
-description of what the code is meant to do? <input type="checkbox">
-Have you commented throughout the code whenever logic is not obvious?
-<input type="checkbox"> Are the outputs reproducible i.e. will the code
-work the same on someone else’s machine? <input type="checkbox"> Is the
-code fully automated to prevent human error? <input type="checkbox"> Is
-your code in the right repo and folder within the repo?
-<input type="checkbox"> Have you updated the relevant quality assurance
-and assumptions logs? <input type="checkbox"> Are your imports done from
-the ‘<em>imports.R</em>’ file? <input type="checkbox"> Are your outputs
-written to the right place in S3?</p>
-<p>For future use:</p>
+description of what the code is meant to do?</p>
+<p><input type="checkbox"> Have you updated the relevant quality
+assurance and assumptions logs?</p>
+<ul>
+<li>Code</li>
+</ul>
+<p><input type="checkbox"> Have you commented throughout the code
+whenever logic is not obvious?</p>
+<p><input type="checkbox"> Are the outputs reproducible i.e. will the
+code work the same on someone else’s machine?</p>
+<p><input type="checkbox"> Is the code fully automated to prevent human
+error?</p>
+<p><input type="checkbox"> Is your code in the right repo and folder
+within that repo?</p>
+<p><input type="checkbox"> Are your imports done from the
+‘<em>imports.R</em>’ file?</p>
+<p><input type="checkbox"> Are your outputs written to the right place
+in S3?</p>
+<ul>
+<li>For future use:</li>
+</ul>
 <p><input type="checkbox"> Have you documented all assumptions using the
-assumptions package? <input type="checkbox"> Does your code follow the
-coding standards? <input type="checkbox"> Does your code have adequate
-unit tests? <input type="checkbox"> Does your code and any input data
-have accompanying quality assurance reports? <input type="checkbox"></p>
+assumptions package?</p>
+<p><input type="checkbox"> Does your code follow the coding
+standards?</p>
+<p><input type="checkbox"> Does your code have adequate unit tests?</p>
+<p><input type="checkbox"> Does your code and any input data have
+accompanying quality assurance reports?</p>
+</div>
+<div id="instructions" class="section level1">
+<h1>Instructions</h1>
 <p>Here are the <strong>step-by-step instructions</strong> to submit a
 pull request:</p>
 <ol style="list-style-type: decimal">
@@ -380,6 +400,7 @@ questions or suggest some changes. Once you have responded to these they
 will approve your pull request and you can merge your changes!</p>
 <p><img src="assets/approved.png" /></p></li>
 </ol>
+</div>
 
 
 
