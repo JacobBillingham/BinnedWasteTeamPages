@@ -5,41 +5,39 @@ title: "Useful Links"
 Here are all the links from across the team pages (and some extras) in one place for your convenience:
     
 ```{r automatically collect links, echo=FALSE, message=FALSE, warning=FALSE}
-
 library(magrittr)
 
-files <- list.files(path=".", pattern="*.Rmd")
-files <- files[ files != 'links.Rmd'] #to stop function checking this script
+files <- list.files(path = ".", pattern = "*.Rmd")
+files <- files[files != "links.Rmd"] # to stop function checking this script
 links <- data.frame(title = character(), V2 = character())
 
-for(i in 1:length(files)){
-  
+for (i in 1:length(files)) {
   script <- readLines(files[i])
-  
-  title <- gsub("title:","",gsub('\"',"",script[2]))
-  urls <- na.omit(stringr::str_match(script,"\\[.*?\\) "))
 
-  addtl_links <- data.frame(cbind(title, urls)) 
+  title <- gsub("title:", "", gsub('\"', "", script[2]))
+  urls <- na.omit(stringr::str_match(script, "\\[.*?\\) "))
+
+  addtl_links <- data.frame(cbind(title, urls))
   links <- rbind(links, addtl_links)
-  
 }
 
 colnames(links) <- c("Page", "Link")
 
 extras <- data.frame(
   Page = c("Extras"),
-  Link = c( "[Waste Flows Shiny App](https://jacobbillingham.shinyapps.io/WasteFlows/)",
-            "[Carbon Emissions Shiny App](https://jacobbillingham.shinyapps.io/CarbonVisualisations/)",
-            "[Fees and Payments Calculator Sharepoint](https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1684860172742&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29&viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4)",
-            "[LA Grouping Shiny App](https://ctaylor-defra.shinyapps.io/shiny_plot/)")
+  Link = c(
+    "[Waste Flows Shiny App](https://jacobbillingham.shinyapps.io/WasteFlows/)",
+    "[Carbon Emissions Shiny App](https://jacobbillingham.shinyapps.io/CarbonVisualisations/)",
+    "[Fees and Payments Calculator Sharepoint](https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1684860172742&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA0MDIwMjcwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29&viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4)",
+    "[LA Grouping Shiny App](https://ctaylor-defra.shinyapps.io/shiny_plot/)"
   )
-  
+)
+
 links <- rbind(links, extras)
 
-links %>% 
+links %>%
   dplyr::mutate(
-    Link = purrr::map(Link, gt::md)) %>%
-    gt::gt()
-  
-
+    Link = purrr::map(Link, gt::md)
+  ) %>%
+  gt::gt()
 ```
