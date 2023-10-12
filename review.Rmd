@@ -4,7 +4,14 @@ title: "Code Review"
 
 This [Github code review tutorial](https://www.youtube.com/watch?v=lSnbOtw4izI) shows you how to review a pull request, or you can follow the steps at the bottom of this page.
 
-Make sure you tick off this checklist before approving a code review:
+#   Checklist
+
+<div style="background-color: #00a33b;
+            color: white;
+            padding: 1em;
+            border-radius: 10px;">
+
+Make sure you tick off this **checklist** before approving a code review:
 
 -   Understanding
 
@@ -25,6 +32,10 @@ Make sure you tick off this checklist before approving a code review:
 -   Quality Assurance
 
     <input type="checkbox"> Has the coder updated the corresponding QA and assumptions logs?
+    
+</div>
+
+#   Instuctions
 
 Follow these step-by-step instructions to do a proper code review:
 
