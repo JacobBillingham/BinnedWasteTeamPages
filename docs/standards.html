@@ -407,63 +407,23 @@ standards</a>.</p>
 <h1>Naming Conventions</h1>
 <ol style="list-style-type: decimal">
 <li>Github repositories should be all lower case with underscores “_”
-instead of spaces.</li>
-<li>R Script names should be camel case
-(e.g. <em>apportionEnglishTonnage.R</em>) with no spaces.</li>
+instead of spaces (e.g. <em>module_b</em>)</li>
+<li>R Script names should be camel case with no spaces
+(e.g. <em>apportionEnglishTonnage.R</em>)</li>
+<li>Functions should be named after the task that they perform
+(e.g. <code>calculate_average()</code>)</li>
 <li>Input files should keep the name they are received with wherever
 possible to aid trace-ability.</li>
-<li>Output files should be named after the</li>
+<li>Output files should be informatively named, with underscores “_”
+instead of spaces (e.g. <em>Wales_Disposal_Tonnages.csv</em>)</li>
 </ol>
-</div>
-<div id="ons-guidance" class="section level1">
-<h1>ONS Guidance</h1>
-<p>Generally, the <a
-href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">Duck
-Book</a> should inform how we work.</p>
-<p>The book’s guidance is embedded in these pages but here are some
-important points to peruse:</p>
-<ul>
-<li>The three pillars of rigourous analysis…
-<ul>
-<li>Reproducible analysis: “the same analysis steps performed on the
-same dataset consistently produces the same result”</li>
-<li>Auditable analysis: “analysis and supporting evidence are available
-for scrutiny”</li>
-<li>Assured analysis: “analysis has passed through a systematic process
-that established it as fit for purpose”</li>
-</ul></li>
-<li>On good coding practice…
-<ul>
-<li>Not following good practices creates ‘technical debt’, which slows
-down further development of the analysis.</li>
-</ul></li>
-<li>On where documentation belongs…
-<ul>
-<li>Pipelines should be well documented, and that documentation should
-be embedded in our code. This makes collaboration easier, as well as
-allowing for easier auditing and assurance. When documentation exists
-alongside the code, it is more likely to be kept up to date than if it
-is spread out across different systems. Having the documentation as part
-of the code means we have a single source of the truth.</li>
-</ul></li>
-<li>On automating QA…
-<ul>
-<li>We should automate the aspects of quality assurance that are
-challenging for humans. This frees up time and makes it easier to keep a
-record of what QA has been performed. The purpose of this automation is
-not to get rid of analysts, but to allow analysts to focus on the QA
-that computers cannot easily do. For example, analysts are much better
-at ensuring that the analysis is fit for purpose.<br />
-</li>
-</ul></li>
-<li>On Agile working…
-<ul>
-<li>In Agile, working software is considered the primary measure of
-success. This means that we don’t spend months creating detailed plans
-and documenting specifications. Instead, we prioritise early and
-continuous delivery of working software.</li>
-</ul></li>
-</ul>
+<p>Where naming is unclear, follow these principles: - Consistency,
+above all else - Short but descriptive and human readable names - No
+spaces, for machine readability - underscores (_) or dashes (-) are
+preferred - Use of consistent date formatting (e.g. YYYY-MM-DD) -
+Padding the left side of numbers with zeros to maintain order - e.g. 001
+instead of 1. The number of zeros should reflect the expected number of
+files.</p>
 </div>
 
 

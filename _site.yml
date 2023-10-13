@@ -34,8 +34,6 @@ navbar:
         href: sce.html      
       - text: "Coding Standards"
         href: standards.html
-#      - text: "Data"
-#        href: data.html
       - text: "Learning"
         href: learning.html  
     - text: "Useful Links"

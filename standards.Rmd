@@ -60,31 +60,16 @@ We have a PowerPoint with further information on our [coding standards](https://
 
 # Naming Conventions
 
-1. Github repositories should be all lower case with underscores "_" instead of spaces.
-2. R Script names should be camel case (e.g. *apportionEnglishTonnage.R*) with no spaces.
+1. Github repositories should be all lower case with underscores "_" instead of spaces (e.g. *module_b*)
+2. R Script names should be camel case  with no spaces (e.g. *apportionEnglishTonnage.R*)
+3. Functions should be named after the task that they perform (e.g. `calculate_average()`)
 3. Input files should keep the name they are received with wherever possible to aid trace-ability.
-4. Output files should be named after the 
+4. Output files should be informatively named, with underscores "_" instead of spaces (e.g. *Wales_Disposal_Tonnages.csv*)
 
-# ONS Guidance
+Where naming is unclear, follow these principles:
+- Consistency, above all else
+- Short but descriptive and human readable names
+- No spaces, for machine readability - underscores (_) or dashes (-) are preferred
+- Use of consistent date formatting (e.g. YYYY-MM-DD)
+- Padding the left side of numbers with zeros to maintain order - e.g. 001 instead of 1. The number of zeros should reflect the expected number of files.
 
-Generally, the [Duck Book](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) should inform how we work.
-
-The book's guidance is embedded in these pages but here are some important points to peruse:
-
-- The three pillars of rigourous analysis...
-    - Reproducible analysis: "the same analysis steps performed on the same dataset consistently produces the same result"
-    - Auditable analysis: "analysis and supporting evidence are available for scrutiny"
-    - Assured analysis: "analysis has passed through a systematic process that established it as fit for purpose"
-- On good coding practice...
-    - Not following good practices creates 'technical debt', which slows down further development of the analysis.
-- On where documentation belongs...
-    - Pipelines should be well documented, and that documentation should be embedded in our code. This makes collaboration easier, as well as allowing for easier auditing and assurance. When documentation exists alongside the code, it is more likely to be kept up to date than if it is spread out across different systems. Having the documentation as part of the code means we have a single source of the truth.
-- On automating QA...
-    - We should automate the aspects of quality assurance that are challenging for humans. This frees up time and makes it easier to keep a record of what QA has been performed. The purpose of this automation is not to get rid of analysts, but to allow analysts to focus on the QA that computers cannot easily do. For example, analysts are much better at ensuring that the analysis is fit for purpose.      
-- On Agile working...    
-    - In Agile, working software is considered the primary measure of success. This means that we don’t spend months creating detailed plans and documenting specifications. Instead, we prioritise early and continuous delivery of working software. 
-    
-
-
-    
-    

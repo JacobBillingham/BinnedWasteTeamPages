@@ -337,6 +337,191 @@ weekly Coffee and Coding sessions</a></li>
 unlimited DataCamp licenses, so anyone in Defra can sign up for a pro
 account)</li>
 </ul>
+<div id="ons-guidance" class="section level1">
+<h1>ONS Guidance</h1>
+<p>Generally, the <a
+href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">Duck
+Book</a> should inform how we work.</p>
+<p>The book’s guidance is embedded in these pages but here are some
+important points to peruse:</p>
+<div id="theory" class="section level3">
+<h3>Theory</h3>
+<ul>
+<li>The three pillars of rigourous analysis…
+<ul>
+<li>Reproducible analysis: “the same analysis steps performed on the
+same dataset consistently produces the same result”</li>
+<li>Auditable analysis: “analysis and supporting evidence are available
+for scrutiny”</li>
+<li>Assured analysis: “analysis has passed through a systematic process
+that established it as fit for purpose”</li>
+</ul></li>
+<li>On good coding practice…
+<ul>
+<li>Despite the initial cost of developing technical skills,
+<strong>evidence shows that applying good practices increases the
+efficiency of code development and maintainability of the code</strong>.
+There are number of case studies that describe how good quality
+assurance practices have improved government analysis.</li>
+<li>Not following good practices creates technical debt, which slows
+down further development of the analysis. This can be necessary for
+delivering to short deadlines, but time should be set aside to address
+this for continued development of the analysis.</li>
+</ul></li>
+</ul>
+</div>
+<div id="practice" class="section level3">
+<h3>Practice</h3>
+<ul>
+<li>On documentation…
+<ul>
+<li>Pipelines should be well documented, and that <strong>documentation
+should be embedded in our code</strong>. This makes collaboration
+easier, as well as allowing for easier auditing and assurance. When
+documentation exists alongside the code, it is more likely to be kept up
+to date than if it is spread out across different systems. Having the
+documentation as part of the code means we have a single source of the
+truth.</li>
+<li>Every function should be documented in the code, so that it is clear
+what the function is supposed to do. Function documentation should
+include what goes in and what comes out of each function.</li>
+<li>Assumptions and caveats of the analysis should be recorded close to
+the code.</li>
+<li>When working on a collaborative or open coding project, it’s good
+practice to describe an overview of your project in a README file. This
+allows users or developers to grasp the overall goal of your
+project.</li>
+<li>Note: could include specification diagram like in QA log
+“map/pseudocode”</li>
+</ul></li>
+<li>On modularity…
+<ul>
+<li>This means breaking your code down into self-contained elements, for
+example [subscripts], classes, and functions. <strong>Functions are the
+lowest level of our code. They should do one thing and do it well.
+[Subscripts] are collections of related functions. We can run our
+pipeline from a high level script that calls in functions from our
+[subscripts].</strong></li>
+<li>Note: have substituted ‘subscripts’ for modules to avoid confusion
+with ‘module B’.</li>
+<li>Logic should be written as functions, so that it can be reused
+consistently and tested. Related functions should be grouped together in
+the same file, so that it is easy to find them. Logic with different
+responsibilities (e.g. reading data versus transforming data) should be
+clearly separated.</li>
+<li>Note: running scripts in this way ensures your code is executed
+reproducibly</li>
+</ul></li>
+<li>On QA…
+<ul>
+<li>We should automate the aspects of quality assurance that are
+challenging for humans. This frees up time and makes it easier to keep a
+record of what QA has been performed. The purpose of this automation is
+not to get rid of analysts, but to allow analysts to focus on the QA
+that computers cannot easily do. For example, analysts are much better
+at ensuring that the analysis is fit for purpose.<br />
+</li>
+<li>As described by the Aqua book, the <strong>quality assurance of our
+analysis should be proportional to the complexity and risk of the
+analysis</strong>.</li>
+<li>Where quality assurance of the code doesn’t meet your target level
+of assurance, for example where there is limited time or skill, then it
+is necessary to supplement this with more in-depth assurance of outputs.
+This might include dual running the analysis with an independent system
+and consistency checks across the output data.</li>
+</ul></li>
+<li>On Agile working…
+<ul>
+<li><strong>In Agile, working software is considered the primary measure
+of success.</strong> This means that we don’t spend months creating
+detailed plans and documenting specifications. Instead, we prioritise
+early and continuous delivery of working software.</li>
+</ul></li>
+<li>On data…
+<ul>
+<li><strong>You should not alter raw data</strong> - treat it as
+read-only. Even data cleaning should take place on a copy of the raw
+data, so that you can document which cleaning decisions have been made.
+There must be an immutable store for raw data in your project
+structure.</li>
+</ul></li>
+<li>On version control…
+<ul>
+<li><strong>Commit small and often</strong></li>
+<li>We should ’include code <strong>and documentation</strong> in
+version control.</li>
+</ul></li>
+</ul>
+</div>
+<div id="for-the-future" class="section level3">
+<h3>For the future</h3>
+<ul>
+<li>On unit testing…
+<ul>
+<li>In their simplest form, software tests run a part of the pipeline on
+example data. They assert that the output data meets certain
+expectations. If these expectations are not met, an error will be
+raised. The analyst can then investigate what caused this error.
+Modularising our code makes it much easier to check that it is working
+as expected. For each important or complex function, we should write at
+least one test.</li>
+<li>Automated ‘unit’ testing should be applied to each function, to
+ensure that code continues to work after future changes to the
+code.</li>
+<li>Each function and the end-to-end analysis should be tested using
+minimal, realistic data.</li>
+<li>Testing should be more extensive on the most important or complex
+parts of the code. However, ideally every single function should be
+tested.</li>
+<li>Tests should account for realistic cases, which might include
+missing data, zeroes, infinities, negative numbers, wrong data types,
+and invalid inputs.</li>
+<li>Each time an error is found in the code, a test should be added to
+assure that the error does not reoccur.</li>
+</ul></li>
+<li>On developing models over time…
+<ul>
+<li>When repeating [or developing] analysis over time, you should
+compare results between analyses. Large differences in the outcome of
+the results may indicate an issue with the analysis process [and allow
+you to identify differences and improvements].</li>
+</ul></li>
+<li>On error catching…
+<ul>
+<li>When code fails to run, it should provide informative error messages
+to describe the problem.</li>
+<li>Note: we haven’t thought about error catching but is linked to unit
+tests.</li>
+</ul></li>
+<li>On reproducibility…
+<ul>
+<li>Code should not be dependent on a specific computer to run. Running
+it on a colleague’s system can help to check this.</li>
+<li>When the same analysis is run multiple times or on different systems
+it should give reproducible outcomes.</li>
+<li>Note: Munzer suggests <code>renv</code> to create a reproducible
+environment. We may also need a configuration (config) file.</li>
+</ul></li>
+<li>On version control…
+<ul>
+<li>To reference specific points in project’s history, Git allows us to
+create “tags”. These tags essentially act as an alias for a particular
+commit hash, allowing us to refer to it by an informative label. In
+analytical projects, we might use tags to mark a particular model
+version or an important stage of our analysis.</li>
+<li>Use Git hooks to encourage good practice</li>
+<li>Note: Git hooks can be used to automatically run lintr, stylr and
+unit tests</li>
+</ul></li>
+<li>On data…
+<ul>
+<li>Large or complex datasets should be stored in a database. Databases
+are collections of related data, which can be easily accessed and
+managed.</li>
+</ul></li>
+</ul>
+</div>
+</div>
 
 
 
