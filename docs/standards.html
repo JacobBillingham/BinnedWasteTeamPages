@@ -324,7 +324,35 @@ $(document).ready(function () {
 </div>
 
 
-<p>The main points are:</p>
+<div id="linting-code" class="section level2">
+<h2>Linting Code</h2>
+<p>Currently we are using the <a
+href="https://style.tidyverse.org/"><code>tidyverse</code> style
+guide</a>, which you can use through the <code>lintr</code> and
+<code>styler</code> packages: - <code>lintr</code>: You can use the
+‘Lint current file’ command in the ‘Addins’ menu in R Studio to obtain a
+list of all the places your script doesn’t comply with the style guide.
+You can then change your code to comply. - <code>styler</code>: The
+‘Style active file’ command (also accessed through the Addins menu) or
+‘Ctrl+Shift+A’ will do some of these changes for you. However, it is
+worth rerunning <code>lintr</code> afterwards to check any remaining
+issues. Additionally, the <code>styler::style_dir()</code> command will
+style all files in a given directory, speeding up the process somewhat.
+Note: before you use <code>styler</code> you will need to tell it which
+style guide to use through ‘Addins &gt; Set style &gt;
+styler::tidyverse_style()’.</p>
+<p>In futur, we hope to have <code>lintr</code> run automatically when
+you commit through the use of <a
+href="https://www.google.com/search?q=wha+tare+commit+hooks&amp;safe=active&amp;sca_esv=573154237&amp;sxsrf=AM9HkKkwVTiv4E_4QYR5aZSJRG3wVKhkJw%3A1697192837676&amp;ei=hRspZZ_wKOO28gLsu5j4AQ&amp;ved=0ahUKEwjfxtGB6PKBAxVjm1wKHewdBh8Q4dUDCBA&amp;uact=5&amp;oq=wha+tare+commit+hooks&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiFXdoYSB0YXJlIGNvbW1pdCBob29rczIHEAAYDRiABDIIEAAYCBgeGA0yCBAAGIoFGIYDMggQABiKBRiGA0idFVDsCFjqE3ADeAGQAQKYAdEBoAHXCKoBBTQuNC4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBxAjGLACGCfCAgYQABgHGB7CAggQABgIGAcYHsICChAhGKABGMMEGAriAwQYACBBiAYBkAYI&amp;sclient=gws-wiz-serp#fpstate=ive&amp;vld=cid:2ebd25be,vid:d70a8PXbrb8,st:0">commit
+hooks</a>, which will also automate our unit tests.</p>
+<p>We may also adapt the <code>tidyverse</code> style guide for our own
+needs, as we have started to do below, but this should be automatic
+through <code>lintr</code> and <code>styler</code>.</p>
+</div>
+<div id="coding-standards" class="section level2">
+<h2>Coding Standards</h2>
+<p>In addition to the <code>tidyverse</code> style guide you should
+adopt the following practices:</p>
 <ol style="list-style-type: decimal">
 <li>We explicitly call packages rather than loading them.</li>
 </ol>
@@ -366,86 +394,75 @@ and tidyverse packages rather than loops. This means we need to load the
 <code>magrittr</code> package.</li>
 <li>Variable names must make sense in plain English
 e.g. <code>localAuthorityPopulation</code> not <code>lapop</code>.</li>
-<li>We use camelCase e.g. <code>localAuthorityPopulation</code> not
-<code>local_authority_population</code>.</li>
 <li>We should modularise our code as much as possible, i.e. discrete
 parts of the code that do a particular job should be contained in a
 function. The end goal is to have the whole model run from one main file
 that calls functions.</li>
 </ol>
-<p>We have a powerpoint with further information on our <a
+<p>We have a PowerPoint with further information on our <a
 href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&amp;file=Coding%20Standards.pptx&amp;action=edit&amp;mobileredirect=true">coding
 standards</a>.</p>
+</div>
 <div id="naming-conventions" class="section level1">
 <h1>Naming Conventions</h1>
 <ol style="list-style-type: decimal">
 <li>Github repositories should be all lower case with underscores “_”
 instead of spaces.</li>
-<li>R Scripts should be…</li>
-<li>Excel files or CSVs should be…</li>
+<li>R Script names should be camel case
+(e.g. <em>apportionEnglishTonnage.R</em>) with no spaces.</li>
+<li>Input files should keep the name they are received with wherever
+possible to aid trace-ability.</li>
+<li>Output files should be named after the</li>
 </ol>
 </div>
-<div id="ons-guidance---unfinished" class="section level1">
-<h1>ONS Guidance - UNFINISHED</h1>
-<p>The <a
+<div id="ons-guidance" class="section level1">
+<h1>ONS Guidance</h1>
+<p>Generally, the <a
 href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">Duck
 Book</a> should inform how we work.</p>
-<p>Important points: - Good practice - <strong>Our pipelines should be
-well documented, and that documentation should be embedded in our code.
-This makes collaboration easier, as well as allowing for easier auditing
-and assurance. When documentation exists alongside the code, it is more
-likely to be kept up to date than if it is spread out across different
-systems. Having the documentation as part of the code means we have a
-single source of the truth.</strong> - Not following good practices
-creates ‘technical debt’, which slows down further development of the
-analysis. - Needs to be: - Reproducible analysis: “the same analysis
-steps performed on the same dataset consistently produces the same
-result” - Auditable analysis: “analysis and supporting evidence are
-available for scrutiny” - Assured analysis: “analysis has passed through
-a systematic process that established it as fit for purpose” - We should
-automate the aspects of quality assurance that are challenging for
-humans. This frees up time and makes it easier to keep a record of what
-QA has been performed. The purpose of this automation is not to get rid
-of analysts, but to allow analysts to focus on the QA that computers
-cannot easily do. For example, analysts are much better at ensuring that
-the analysis is fit for purpose.<br />
-- We should automate the aspects of quality assurance that are
+<p>The book’s guidance is embedded in these pages but here are some
+important points to peruse:</p>
+<ul>
+<li>The three pillars of rigourous analysis…
+<ul>
+<li>Reproducible analysis: “the same analysis steps performed on the
+same dataset consistently produces the same result”</li>
+<li>Auditable analysis: “analysis and supporting evidence are available
+for scrutiny”</li>
+<li>Assured analysis: “analysis has passed through a systematic process
+that established it as fit for purpose”</li>
+</ul></li>
+<li>On good coding practice…
+<ul>
+<li>Not following good practices creates ‘technical debt’, which slows
+down further development of the analysis.</li>
+</ul></li>
+<li>On where documentation belongs…
+<ul>
+<li>Pipelines should be well documented, and that documentation should
+be embedded in our code. This makes collaboration easier, as well as
+allowing for easier auditing and assurance. When documentation exists
+alongside the code, it is more likely to be kept up to date than if it
+is spread out across different systems. Having the documentation as part
+of the code means we have a single source of the truth.</li>
+</ul></li>
+<li>On automating QA…
+<ul>
+<li>We should automate the aspects of quality assurance that are
 challenging for humans. This frees up time and makes it easier to keep a
 record of what QA has been performed. The purpose of this automation is
 not to get rid of analysts, but to allow analysts to focus on the QA
 that computers cannot easily do. For example, analysts are much better
-at ensuring that the analysis is fit for purpose. - will have several
-levels of master and sub scripts, with one all powerful one (that calls
-the waste flow and cost/ tonne model) - In Agile, working software is
-considered the primary measure of success. This means that we don’t
-spend months creating detailed plans and documenting specifications.
-Instead, we prioritise early and continuous delivery of working
-software.</p>
-<pre><code>https://style.tidyverse.org/index.html</code></pre>
-<p>#Jake’s Plan</p>
-<ul>
-<li><p>Week 1 - get on delivery footing</p>
-<ul>
-<li>Tidy AWS</li>
-<li>Consolidate github repos</li>
-<li>Get everyone familiar with guidance and new way of working</li>
+at ensuring that the analysis is fit for purpose.<br />
+</li>
 </ul></li>
-<li><p>Week 2 to 4</p>
+<li>On Agile working…
 <ul>
-<li>Get the model to MVP state in terms of numbers out</li>
+<li>In Agile, working software is considered the primary measure of
+success. This means that we don’t spend months creating detailed plans
+and documenting specifications. Instead, we prioritise early and
+continuous delivery of working software.</li>
 </ul></li>
-<li><p>End of October deadline</p></li>
-<li><p>Week 5 to 7</p>
-<ul>
-<li>Finesse</li>
-<li>Input and output exploratory reports for Tom B</li>
-<li>Add unit testing etc.</li>
-</ul></li>
-<li><p>Week 8</p>
-<ul>
-<li>Wiggle room</li>
-</ul></li>
-<li><p>End of November deadline</p></li>
 </ul>
 </div>
 

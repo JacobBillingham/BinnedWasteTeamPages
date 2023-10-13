@@ -2,7 +2,19 @@
 title: "Coding Standards"
 ---
 
-The main points are:
+## Linting Code
+
+Currently we are using the [`tidyverse` style guide](https://style.tidyverse.org/), which you can use through the `lintr` and `styler` packages:
+    - `lintr`: You can use the 'Lint current file' command in the 'Addins' menu in R Studio to obtain a list of all the places your script doesn't comply with the style guide. You can then change your code to comply.
+    - `styler`: The 'Style active file' command (also accessed through the Addins menu) or 'Ctrl+Shift+A' will do some of these changes for you. However, it is worth rerunning `lintr` afterwards to check any remaining issues. Additionally, the `styler::style_dir()` command will style all files in a given directory, speeding up the process somewhat. Note: before you use `styler` you will need to tell it which style guide to use through 'Addins > Set style > styler::tidyverse_style()'.
+    
+In futur, we hope to have `lintr` run automatically when you commit through the use of [commit hooks](https://www.google.com/search?q=wha+tare+commit+hooks&safe=active&sca_esv=573154237&sxsrf=AM9HkKkwVTiv4E_4QYR5aZSJRG3wVKhkJw%3A1697192837676&ei=hRspZZ_wKOO28gLsu5j4AQ&ved=0ahUKEwjfxtGB6PKBAxVjm1wKHewdBh8Q4dUDCBA&uact=5&oq=wha+tare+commit+hooks&gs_lp=Egxnd3Mtd2l6LXNlcnAiFXdoYSB0YXJlIGNvbW1pdCBob29rczIHEAAYDRiABDIIEAAYCBgeGA0yCBAAGIoFGIYDMggQABiKBRiGA0idFVDsCFjqE3ADeAGQAQKYAdEBoAHXCKoBBTQuNC4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBxAjGLACGCfCAgYQABgHGB7CAggQABgIGAcYHsICChAhGKABGMMEGAriAwQYACBBiAYBkAYI&sclient=gws-wiz-serp#fpstate=ive&vld=cid:2ebd25be,vid:d70a8PXbrb8,st:0), which will also automate our unit tests. 
+
+We may also adapt the `tidyverse` style guide for our own needs, as we have started to do below, but this should be automatic through `lintr` and `styler`.
+
+## Coding Standards
+
+In addition to the `tidyverse` style guide you should adopt the following practices:
 
 1. We explicitly call packages rather than loading them.
 
@@ -42,52 +54,37 @@ select(...)
 2. Packages should only be those available on [CRAN](https://cran.r-project.org/) 
 3. Generally we should be using the pipe operator (`%>%`) and tidyverse packages rather than loops. This means we need to load the `magrittr` package.
 4. Variable names must make sense in plain English e.g. `localAuthorityPopulation` not `lapop`.
-5. We use camelCase e.g. `localAuthorityPopulation` not `local_authority_population`.
 6. We should modularise our code as much as possible, i.e. discrete parts of the code that do a particular job should be contained in a function. The end goal is to have the whole model run from one main file that calls functions.
 
-We have a powerpoint with further information on our [coding standards](https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&file=Coding%20Standards.pptx&action=edit&mobileredirect=true).
+We have a PowerPoint with further information on our [coding standards](https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&file=Coding%20Standards.pptx&action=edit&mobileredirect=true).
 
 # Naming Conventions
 
 1. Github repositories should be all lower case with underscores "_" instead of spaces.
-2. R Scripts should be...
-3. Excel files or CSVs should be...
+2. R Script names should be camel case (e.g. *apportionEnglishTonnage.R*) with no spaces.
+3. Input files should keep the name they are received with wherever possible to aid trace-ability.
+4. Output files should be named after the 
 
-# ONS Guidance - UNFINISHED
+# ONS Guidance
 
-The [Duck Book](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) should inform how we work.
+Generally, the [Duck Book](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) should inform how we work.
 
-Important points:
-- Good practice
-    - **Our pipelines should be well documented, and that documentation should be embedded in our code. This makes collaboration easier, as well as allowing for easier auditing and assurance. When documentation exists alongside the code, it is more likely to be kept up to date than if it is spread out across different systems. Having the documentation as part of the code means we have a single source of the truth.**
+The book's guidance is embedded in these pages but here are some important points to peruse:
+
+- The three pillars of rigourous analysis...
+    - Reproducible analysis: "the same analysis steps performed on the same dataset consistently produces the same result"
+    - Auditable analysis: "analysis and supporting evidence are available for scrutiny"
+    - Assured analysis: "analysis has passed through a systematic process that established it as fit for purpose"
+- On good coding practice...
     - Not following good practices creates 'technical debt', which slows down further development of the analysis.
-    - Needs to be:
-        - Reproducible analysis: "the same analysis steps performed on the same dataset consistently produces the same result"
-        - Auditable analysis: "analysis and supporting evidence are available for scrutiny"
-        - Assured analysis: "analysis has passed through a systematic process that established it as fit for purpose"
+- On where documentation belongs...
+    - Pipelines should be well documented, and that documentation should be embedded in our code. This makes collaboration easier, as well as allowing for easier auditing and assurance. When documentation exists alongside the code, it is more likely to be kept up to date than if it is spread out across different systems. Having the documentation as part of the code means we have a single source of the truth.
+- On automating QA...
     - We should automate the aspects of quality assurance that are challenging for humans. This frees up time and makes it easier to keep a record of what QA has been performed. The purpose of this automation is not to get rid of analysts, but to allow analysts to focus on the QA that computers cannot easily do. For example, analysts are much better at ensuring that the analysis is fit for purpose.      
-    - We should automate the aspects of quality assurance that are challenging for humans. This frees up time and makes it easier to keep a record of what QA has been performed. The purpose of this automation is not to get rid of analysts, but to allow analysts to focus on the QA that computers cannot easily do. For example, analysts are much better at ensuring that the analysis is fit for purpose.
-    - will have several levels of master and sub scripts, with one all powerful one (that calls the waste flow and cost/ tonne model)
+- On Agile working...    
     - In Agile, working software is considered the primary measure of success. This means that we don’t spend months creating detailed plans and documenting specifications. Instead, we prioritise early and continuous delivery of working software. 
     
-    https://style.tidyverse.org/index.html
-    
-#Jake's Plan
 
-- Week 1 - get on delivery footing
-    - Tidy AWS
-    - Consolidate github repos
-    - Get everyone familiar with guidance and new way of working
-- Week 2 to 4 
-    - Get the model to MVP state in terms of numbers out
-- End of October deadline
 
-- Week 5 to 7
-    - Finesse
-    - Input and output exploratory reports for Tom B
-    - Add unit testing etc.
-- Week 8
-    - Wiggle room
-- End of November deadline
     
     

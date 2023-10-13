@@ -335,32 +335,56 @@ reviews.</p>
 <p>Make sure you tick off this <strong>checklist</strong> before
 submitting a pull request:</p>
 <ul>
+<li><p>Git</p>
+<p><input type="checkbox"> Are you merging into the appropriate branch
+(usually <em>dev</em>)?</p></li>
 <li><p>Admin</p>
 <p><input type="checkbox"> Have you provided the reviewer with a good
-description of what the code is meant to do?</p>
+description of what the code is meant to do in your pull request?</p>
 <p><input type="checkbox"> Have you updated the relevant quality
-assurance and assumptions logs?</p></li>
-<li><p>Code</p>
-<p><input type="checkbox"> Have you commented throughout the code
-whenever logic is not obvious?</p>
+assurance and assumptions logs?</p>
+<pre><code>- Add links to QA logs</code></pre>
+<p><input type="checkbox"> Are any inputs you use documented in the data
+log?</p>
+<p><input type="checkbox"> Have you added any issues identified to the
+Jira backlog?</p></li>
+<li><p>Coding Standards</p>
+<p><input type="checkbox"> Have you linted your code to ensure it
+complies with the style guide?</p>
+<p><input type="checkbox"> Is your code’s logic clear and free of
+unnecessary complexity?</p>
+<p><input type="checkbox"> Have you commented to explain whenever logic
+is not obvious?</p>
+<p><input type="checkbox"> Are variable names in plain English and
+informative?</p>
 <p><input type="checkbox"> Are the outputs reproducible i.e. will the
-code work the same on someone else’s machine?</p>
-<p><input type="checkbox"> Is the code fully automated to prevent human
-error?</p>
+code work the same on someone else’s machine?</p></li>
+<li><p>Modularisation</p>
+<p><input type="checkbox"> Are individual pieces of logic, i.e. that
+carry out one specific task, written as functions?</p>
+<p><input type="checkbox"> Does one main analysis script source and run
+functions from subscripts?</p>
+<p><input type="checkbox"> Are similar functions contained in the same
+subscripts?</p>
+<p><input type="checkbox"> Is repetition in the code minimalised? For
+example, by moving reusable code into functions or classes.</p></li>
+<li><p>Project Structure</p>
 <p><input type="checkbox"> Is your code in the right repo and folder
 within that repo?</p>
 <p><input type="checkbox"> Are your imports done from the
 ‘<em>imports.R</em>’ file?</p>
 <p><input type="checkbox"> Are your outputs written to the right place
 in S3?</p></li>
+<li><p>Documentation</p>
+<p><input type="checkbox"> Have you updated the README files with any
+changes relevant to your code?</p></li>
 <li><p>For future use:</p>
 <p><input type="checkbox"> Have you documented all assumptions using the
 assumptions package?</p>
-<p><input type="checkbox"> Does your code follow the coding
-standards?</p>
-<p><input type="checkbox"> Does your code have adequate unit tests?</p>
-<p><input type="checkbox"> Does your code and any input data have
-accompanying quality assurance reports?</p></li>
+<p><input type="checkbox"> Does your code have adequate unit tests? Are
+these run automatically using git hooks?</p>
+<p><input type="checkbox"> Does your code pass existing unit
+tests?</p></li>
 </ul>
 </div>
 </div>
