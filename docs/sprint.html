@@ -244,8 +244,26 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="sprint.html">Sprints</a>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Team Info
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="organisation.html">Organisation</a>
+    </li>
+    <li>
+      <a href="sprint.html">Sprint Timings</a>
+    </li>
+    <li>
+      <a href="meetings.html">Meeting Etiquette</a>
+    </li>
+    <li>
+      <a href="glossary.html">Acronyms</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -280,9 +298,6 @@ $(document).ready(function () {
     </li>
     <li>
       <a href="standards.html">Coding Standards</a>
-    </li>
-    <li>
-      <a href="data.html">Data</a>
     </li>
     <li>
       <a href="learning.html">Learning</a>
@@ -342,11 +357,11 @@ $(document).ready(function () {
 <td><strong>Purpose</strong></td>
 <td align="center">Deciding which tickets we want to complete this week.
 Allocating amongst us.</td>
-<td align="center">Completing tickets.</td>
-<td align="center">Updating on completed tasks, identifying blockers for
-uncompleted tasks.</td>
-<td align="center">Completing tickets.</td>
-<td align="center">Confirming completed tasks, demonstrating working
+<td align="center">Progressing tickets.</td>
+<td align="center">Updating on completed tickets, identifying blockers
+for uncompleted tickets.</td>
+<td align="center">Completing tickets. Making pull requests.</td>
+<td align="center">Reviewing completed tickets. Demonstrating working
 code and a look forward to next week.</td>
 </tr>
 </tbody>
@@ -354,14 +369,15 @@ code and a look forward to next week.</td>
 <p>Several of these sprints will form each <strong>model building
 cycle</strong>. These will be bookended by extended kickoff and review
 meetings as shown below:</p>
-<table>
+<table style="width:100%;">
 <colgroup>
-<col width="10%" />
-<col width="17%" />
-<col width="17%" />
-<col width="17%" />
-<col width="17%" />
-<col width="17%" />
+<col width="9%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -371,6 +387,7 @@ meetings as shown below:</p>
 <td align="center">Sprint 2</td>
 <td align="center">Sprint 3</td>
 <td align="center">…</td>
+<td align="center">Review Meeting (1 hr)</td>
 </tr>
 <tr class="even">
 <td><strong>Purpose</strong></td>
@@ -379,14 +396,14 @@ meetings as shown below:</p>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
+<td align="center">Did we achieve our goals? What lessons did we learn?
+Review our ticket backlog.</td>
 </tr>
 </tbody>
 </table>
-<p>We manage our on this <a
+<p>We manage tasks for each sprint on the <a
 href="https://eaflood.atlassian.net/jira/software/projects/B1/boards/1483">Module
-B1 Jira board</a> and <a
-href="https://eaflood.atlassian.net/jira/software/projects/B2/boards/1486">Module
-B2 Jira board</a> .</p>
+B1 Jira board</a>.</p>
 
 
 

@@ -11,7 +11,7 @@
 
 
 
-<title>Data</title>
+<title>Organisation</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -244,8 +244,26 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="sprint.html">Sprints</a>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Team Info
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="organisation.html">Organisation</a>
+    </li>
+    <li>
+      <a href="sprint.html">Sprint Timings</a>
+    </li>
+    <li>
+      <a href="meetings.html">Meeting Etiquette</a>
+    </li>
+    <li>
+      <a href="glossary.html">Acronyms</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -282,9 +300,6 @@ $(document).ready(function () {
       <a href="standards.html">Coding Standards</a>
     </li>
     <li>
-      <a href="data.html">Data</a>
-    </li>
-    <li>
       <a href="learning.html">Learning</a>
     </li>
   </ul>
@@ -304,31 +319,30 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Data</h1>
+<h1 class="title toc-ignore">Organisation</h1>
 
 </div>
 
 
-<div id="s3" class="section level1">
-<h1>S3</h1>
-<p>S3 is accessed through the <a
-href="https://int-sce-network.awsapps.com/console">AWS console</a>. When
-we upload, modify or delete data on S3, this must be recorded in the <a
-href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">Data
-Log</a>.</p>
-<p><strong>All binned waste data</strong> should be stored in the
-‘moduleB2’ folder at: <em>s3://s3-ranch-043/moduleB2/</em>.</p>
-<p>Scripts for reading and writing to AWS can be found in the <a
-href="https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd">useful
-scripts repo</a>. Here is an example of <strong>reading</strong> an
-<strong>Excel</strong> file:</p>
-<pre class="r"><code>excel_data &lt;- aws.s3::s3read_using(
-  FUN = openxlsx::read.xlsx,
-  object = &quot;test_folder/test_data.xlsx&quot;, # this file exists, but replace with your own filepath
-  sheet=&quot;Sheet1&quot;,
-  fillMergedCells = TRUE,
-  bucket = &quot;s3-ranch-043&quot;)</code></pre>
-</div>
+<p>We are one of five teams within the Fees and Payments Calculator
+modelling team.</p>
+<ol style="list-style-type: decimal">
+<li>Module A - Producer Fees</li>
+<li>Module B1 - LA Costs</li>
+<li>Module B2 - Binned Waste</li>
+<li>QA</li>
+<li>Readiness Team</li>
+</ol>
+<p>For more info, see slide 5 on the <a
+href="https://defra.sharepoint.com/:p:/t/Team419/ET9BduVb5n1KoY1MRh_HzIgBpMcze0Na0iz3Zdlg0Xnljw?e=BgFqbk&amp;CID=400146ED-B571-496F-BA2F-ED9010488AF3&amp;wdLOR=c7120BEFD-55C0-4AC6-B916-B17122625B69">R&amp;WE
+organogram</a>.</p>
+<p>The below provides an idea of where we sit within Defra:</p>
+<p><img src="assets/fpc_org.png" alt="A diagram of where the FPC team sits within Defra." width="300"/></p>
+<p>For further detail, please see the <a
+href="https://defra.sharepoint.com/sites/Defraintranet/SitePages/Organisational-chart.aspx">Defra</a>
+and <a
+href="https://defra.sharepoint.com/teams/Team1478/Central%20PMO/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=40pAnJ&amp;cid=6748e449%2Da960%2D4705%2D9694%2D022465844f7d&amp;RootFolder=%2Fteams%2FTeam1478%2FCentral%20PMO%2F06%2E%20Resourcing%2F03%2E%20Resource%20%26%20Waste%20People%20%26%20Resourcing%2F1%2E%20Org%20Charts&amp;FolderCTID=0x012000A44110381EB3CB4C816BD7BB43BEA974&amp;OR=Teams%2DHL&amp;CT=1692001571358&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA3MDMwNzMzMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D">CPR</a>
+organisational charts.</p>
 
 
 

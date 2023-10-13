@@ -11,13 +11,15 @@ files <- list.files(path = ".", pattern = "*.Rmd")
 files <- files[files != "links.Rmd"] # to stop function checking this script
 links <- data.frame(title = character(), V2 = character())
 
-for (i in 1:length(files)) {
+for (i in seq_along(files)) {
   script <- readLines(files[i])
 
   title <- gsub("title:", "", gsub('\"', "", script[2]))
-  urls <- na.omit(stringr::str_match(script, "\\[.*?\\) "))
-
-  addtl_links <- data.frame(cbind(title, urls))
+  space_urls <- na.omit(stringr::str_match(script, "\\[.*?\\) "))
+  stop_urls <- na.omit(stringr::str_match(script, "\\[.*?\\)\\."))
+  stop_urls <- gsub("\\.","", stop_urls)
+  
+  addtl_links <- rbind(data.frame(cbind(title, space_urls)), data.frame(cbind(title, stop_urls)))
   links <- rbind(links, addtl_links)
 }
 

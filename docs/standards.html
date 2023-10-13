@@ -244,8 +244,26 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="sprint.html">Sprints</a>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Team Info
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="organisation.html">Organisation</a>
+    </li>
+    <li>
+      <a href="sprint.html">Sprint Timings</a>
+    </li>
+    <li>
+      <a href="meetings.html">Meeting Etiquette</a>
+    </li>
+    <li>
+      <a href="glossary.html">Acronyms</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -282,9 +300,6 @@ $(document).ready(function () {
       <a href="standards.html">Coding Standards</a>
     </li>
     <li>
-      <a href="data.html">Data</a>
-    </li>
-    <li>
       <a href="learning.html">Learning</a>
     </li>
   </ul>
@@ -309,9 +324,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>Our coding standards can be found <a
-href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&amp;file=Coding%20Standards.pptx&amp;action=edit&amp;mobileredirect=true">here</a>.
-The main points are:</p>
+<p>The main points are:</p>
 <ol style="list-style-type: decimal">
 <li>We explicitly call packages rather than loading them.</li>
 </ol>
@@ -360,6 +373,9 @@ parts of the code that do a particular job should be contained in a
 function. The end goal is to have the whole model run from one main file
 that calls functions.</li>
 </ol>
+<p>We have a powerpoint with further information on our <a
+href="https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&amp;file=Coding%20Standards.pptx&amp;action=edit&amp;mobileredirect=true">coding
+standards</a>.</p>
 <div id="naming-conventions" class="section level1">
 <h1>Naming Conventions</h1>
 <ol style="list-style-type: decimal">

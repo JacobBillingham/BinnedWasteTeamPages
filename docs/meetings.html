@@ -11,7 +11,7 @@
 
 
 
-<title>Coding Environment</title>
+<title>Meeting Etiquette</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -319,40 +319,46 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Coding Environment</h1>
+<h1 class="title toc-ignore">Meeting Etiquette</h1>
 
 </div>
 
 
-<p>We use Defra’s <strong>Scientific Coding Environment</strong> which
-allows us to write and run code on Amazon Web Service’s EC2 virtual
-machines, and store our data using Amazon Web Services S3. Speak to the
-SCE admins (Ope and Jake as of September 2023) if you are not set up on
-the SCE.</p>
-<p>We can use <a href="http://ranch-479.int.sce.network/rstudio/">R
-Studio on our virtual machine</a>. This is available 8am - 8pm
-daily.</p>
-<div id="s3" class="section level1">
-<h1>S3</h1>
-<p>S3 is accessed through the <a
-href="https://int-sce-network.awsapps.com/console">AWS console</a>. When
-we upload, modify or delete data on S3, this must be recorded in the <a
-href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">Data
-Log</a>.</p>
-<p><strong>All binned waste data</strong> should be stored in the
-appropriate B1 or B2 folder at: <em>s3://s3-ranch-043/Module_B1/</em> or
-<em>s3://s3-ranch-043/moduleB2/</em>..</p>
-<p>Scripts for reading and writing to AWS can be found in the <a
-href="https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd">useful
-scripts repo</a>. Here is an example of <strong>reading</strong> an
-<strong>Excel</strong> file:</p>
-<pre class="r"><code>excel_data &lt;- aws.s3::s3read_using(
-  FUN = openxlsx::read.xlsx,
-  object = &quot;test_folder/test_data.xlsx&quot;, # this file exists, but replace with your own filepath
-  sheet=&quot;Sheet1&quot;,
-  fillMergedCells = TRUE,
-  bucket = &quot;s3-ranch-043&quot;)</code></pre>
-</div>
+<p>These guidelines for meetings are endorsed by our senior leadership
+so please use them:</p>
+<ol style="list-style-type: decimal">
+<li>All employees are empowered to block out time in calendars free of
+meetings and this is respected.</li>
+<li>All colleagues should avoid setting up meetings where possible if
+time has been blocked out.</li>
+<li>We will block out the Defra lunch hour (12:30-1:30pm) in all R&amp;W
+employees.</li>
+<li>Before producing your invite consider if the whole team is required
+or if a representative would work with notes to take away to present to
+their team.</li>
+<li>All meetings have a clear agenda and purpose, circulated ahead of
+the meeting to allow individuals to prepare and contribute effectively –
+and will inform who is best placed to attend.</li>
+<li>Meetings should typically be no longer than 50 minutes, which allows
+10 minutes comfort between meetings. Meetings that are longer than 50
+minutes should include a 10-minute comfort break.</li>
+<li>Avoid multi-tasking and working on other documents allowing people
+to be present.</li>
+<li>Using calendars correctly - accepting and declining meetings (select
+to send a response this will update tracking) - tracking can then be
+seen and it can be determined if the meeting should go ahead.</li>
+<li>A short readout and key points should be cascaded to relevant teams
+asap after the meeting.</li>
+</ol>
+<p>Some additional tips:</p>
+<ul>
+<li>You can set meetings to start at 5 past automatically (File &gt;
+Options &gt; Calendar &gt; Shorten appointments and meetings)</li>
+<li>You can view only someone’s ‘accepted’ meetings by going to ‘View
+&gt; View Settings &gt; Filter &gt; Advanced’ and then setting the
+filter to ‘Meeting Status’ ‘equals’ ‘Accepted’. This will hide their
+meetings that are tentative or free to allow you to find a slot.</li>
+</ul>
 
 
 

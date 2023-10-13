@@ -8,8 +8,16 @@ output:
 navbar:
   title: "Module B Team Pages"
   left:
-    - text: "Sprints"
-      href: sprint.html
+    - text: "Team Info"
+      menu:
+      - text: "Organisation"
+        href: organisation.html  
+      - text: "Sprint Timings"
+        href: sprint.html
+      - text: "Meeting Etiquette"
+        href: meetings.html  
+      - text: "Acronyms"
+        href: glossary.html
     - text: "How to..."
       menu:
       - text: "...set up Github"
@@ -26,8 +34,8 @@ navbar:
         href: sce.html      
       - text: "Coding Standards"
         href: standards.html
-      - text: "Data"
-        href: data.html
+#      - text: "Data"
+#        href: data.html
       - text: "Learning"
         href: learning.html  
     - text: "Useful Links"

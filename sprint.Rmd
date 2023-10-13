@@ -7,13 +7,13 @@ When working on model the we use the following methodology:
 | | Monday | Tuesday | Wednesday | Thursday | Friday |
 |---|:---:|:---:|:---:|:---:|:---:|
 | **Meeting** | Allocating Tickets (11 am, 1 hour) | | Updates (10 am, 30 mins) | | Sprint Review (3:30 pm, 30 mins) |
-| **Purpose** | Deciding which tickets we want to complete this week. Allocating amongst us. | Completing tickets. | Updating on completed tasks, identifying blockers for uncompleted tasks. | Completing tickets. | Confirming completed tasks, demonstrating working code and a look forward to next week. |
+| **Purpose** | Deciding which tickets we want to complete this week. Allocating amongst us. | Progressing tickets. | Updating on completed tickets, identifying blockers for uncompleted tickets. | Completing tickets. Making pull requests. | Reviewing completed tickets. Demonstrating working code and a look forward to next week. |
 
 Several of these sprints will form each **model building cycle**. These will be bookended by extended kickoff and review meetings as shown below:
 
-|||||||
-|---|:---:|:---:|:---:|:---:|:---:|
+||||||||
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Activity** | Kickoff Meeting (1 hr) | Sprint 1 | Sprint 2 | Sprint 3 | ... | Review Meeting (1 hr) |
 | **Purpose** | What do we want to achieve this cycle? ||||| Did we achieve our goals? What lessons did we learn? Review our ticket backlog. |
 
-We manage our on this [Module B1 Jira board](https://eaflood.atlassian.net/jira/software/projects/B1/boards/1483) and [Module B2 Jira board](https://eaflood.atlassian.net/jira/software/projects/B2/boards/1486) . 
+We manage tasks for each sprint on the [Module B1 Jira board](https://eaflood.atlassian.net/jira/software/projects/B1/boards/1483).
