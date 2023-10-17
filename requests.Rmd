@@ -24,7 +24,7 @@ Make sure you tick off this **checklist** before submitting a pull request:
 
           - Links to QA logs - more info on how to fill out
           
-          - Note any new data uploaded to S3 should be logged in our [S3 Data Log] and the information can then be copied across to the QA log data tab.
+          - Note any new data uploaded to S3 should be logged in our [S3 Data Log](https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&file=Data%20Log%20Ranch_479.xlsx&action=default&mobileredirect=true) and the information can then be copied across to the QA log data tab.
 
     <input type="checkbox"> Are any inputs you use documented in the data log?
 
@@ -52,9 +52,11 @@ Make sure you tick off this **checklist** before submitting a pull request:
 
 -   Project Structure
 
-    <input type="checkbox"> Is your code in the right repo and folder within that repo?
+    <input type="checkbox"> Is your code in the right repo and folder within that repo? See diagram on coding standards page if unsure.
 
     <input type="checkbox"> Are your imports done from the '*imports.R*' file?
+    
+    <input type="checkbox"> Are your functions sourced from the '*source.R*' file?
 
     <input type="checkbox"> Are your outputs written to the right place in S3?
 

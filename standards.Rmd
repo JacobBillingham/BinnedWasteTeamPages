@@ -2,6 +2,12 @@
 title: "Coding Standards"
 ---
 
+## Repo Structure
+
+You should adhere to this structure when writing code:
+
+![](~/module_b_team_pages/assets/repo_structure.png)
+
 ## Linting Code
 
 Currently we are using the [`tidyverse` style guide](https://style.tidyverse.org/), which you can use through the `lintr` and `styler` packages:

@@ -55,9 +55,11 @@ Make sure you tick off this **checklist** before approving a code review:
 
 -   Project Structure
     
-    <input type="checkbox"> Is their code in the right repo and folder within that repo?
+    <input type="checkbox"> Is their code in the right repo and folder within that repo? See diagram on coding standards page if unsure.
     
     <input type="checkbox"> Are their imports done from the '*imports.R*' file?
+    
+    <input type="checkbox"> Are their functions sourced from the '*source.R*' file?
 
     <input type="checkbox"> Are their outputs written to the right place in S3?
     
