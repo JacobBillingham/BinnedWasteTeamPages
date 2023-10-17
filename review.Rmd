@@ -21,9 +21,9 @@ Make sure you tick off this **checklist** before approving a code review:
 
     <input type="checkbox"> Have they provided you with a good description of what the code is meant to do in the pull request?
 
-    <input type="checkbox"> Have they updated the relevant quality assurance and assumptions logs?
+    <input type="checkbox"> Have they updated the relevant quality assurance logs?
         
-        - Add links to QA logs
+        - Add links to QA logs, Note there are also some sections that you (code reviewer) should fill out.
         
     <input type="checkbox"> Are any inputs they use documented in the data log?
 

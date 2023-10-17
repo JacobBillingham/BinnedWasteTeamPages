@@ -6,27 +6,28 @@ We use Github for version control, collaboration and code reviews.
 
 # Checklist
 
-<div style="background-color: #00a33b;
+::: {style="background-color: #00a33b;
             color: white;
             padding: 1em;
-            border-radius: 10px;">
-
+            border-radius: 10px;"}
 Make sure you tick off this **checklist** before submitting a pull request:
 
 -   Git
-    
-    <input type="checkbox"> Are you merging into the appropriate branch (usually *dev*)? 
-    
+
+    <input type="checkbox"> Are you merging into the appropriate branch (usually *dev*)?
+
 -   Admin
 
     <input type="checkbox"> Have you provided the reviewer with a good description of what the code is meant to do in your pull request?
 
-    <input type="checkbox"> Have you updated the relevant quality assurance and assumptions logs?
-        
-        - Add links to QA logs
-        
+    <input type="checkbox"> Have you updated the relevant quality assurance logs?
+
+          - Links to QA logs - more info on how to fill out
+          
+          - Note any new data uploaded to S3 should be logged in our [S3 Data Log] and the information can then be copied across to the QA log data tab.
+
     <input type="checkbox"> Are any inputs you use documented in the data log?
-    
+
     <input type="checkbox"> Have you added any issues identified to the Jira backlog?
 
 -   Coding Standards
@@ -36,29 +37,27 @@ Make sure you tick off this **checklist** before submitting a pull request:
     <input type="checkbox"> Is your code's logic clear and free of unnecessary complexity?
 
     <input type="checkbox"> Have you commented to explain whenever logic is not obvious?
-    
+
     <input type="checkbox"> Are variable names in plain English and informative?
 
     <input type="checkbox"> Are the outputs reproducible i.e. will the code work the same on someone else's machine?
-    
+
 -   Modularisation
 
     <input type="checkbox"> Are individual pieces of logic, i.e. that carry out one specific task, written as functions?
-    
-    <input type="checkbox"> Does one main analysis script source and run functions from subscripts? 
-    
-    <input type="checkbox"> Are similar functions contained in the same subscripts?
-    
+
+    <input type="checkbox"> Does one main analysis script source and run functions from subscripts?
+
     <input type="checkbox"> Is repetition in the code minimalised? For example, by moving reusable code into functions or classes.
 
 -   Project Structure
-    
+
     <input type="checkbox"> Is your code in the right repo and folder within that repo?
-    
+
     <input type="checkbox"> Are your imports done from the '*imports.R*' file?
 
     <input type="checkbox"> Are your outputs written to the right place in S3?
-    
+
 -   Documentation
 
     <input type="checkbox"> Have you updated the README files with any changes relevant to your code?
@@ -68,10 +67,9 @@ Make sure you tick off this **checklist** before submitting a pull request:
     <input type="checkbox"> Have you documented all assumptions using the assumptions package?
 
     <input type="checkbox"> Does your code have adequate unit tests? Are these run automatically using git hooks?
-    
-    <input type="checkbox"> Does your code pass existing unit tests?
 
-</div>
+    <input type="checkbox"> Does your code pass existing unit tests?
+:::
 
 # Instructions
 
