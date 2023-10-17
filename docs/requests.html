@@ -328,10 +328,8 @@ $(document).ready(function () {
 reviews.</p>
 <div id="checklist" class="section level1">
 <h1>Checklist</h1>
-<div style="background-color: #00a33b;
-            color: white;
-            padding: 1em;
-            border-radius: 10px;">
+<div
+style="background-color: #00a33b;             color: white;             padding: 1em;             border-radius: 10px;">
 <p>Make sure you tick off this <strong>checklist</strong> before
 submitting a pull request:</p>
 <ul>
@@ -342,8 +340,10 @@ submitting a pull request:</p>
 <p><input type="checkbox"> Have you provided the reviewer with a good
 description of what the code is meant to do in your pull request?</p>
 <p><input type="checkbox"> Have you updated the relevant quality
-assurance and assumptions logs?</p>
-<pre><code>- Add links to QA logs</code></pre>
+assurance logs?</p>
+<pre><code>  - Links to QA logs - more info on how to fill out
+
+  - Note any new data uploaded to S3 should be logged in our [S3 Data Log] and the information can then be copied across to the QA log data tab.</code></pre>
 <p><input type="checkbox"> Are any inputs you use documented in the data
 log?</p>
 <p><input type="checkbox"> Have you added any issues identified to the
@@ -364,8 +364,6 @@ code work the same on someone else’s machine?</p></li>
 carry out one specific task, written as functions?</p>
 <p><input type="checkbox"> Does one main analysis script source and run
 functions from subscripts?</p>
-<p><input type="checkbox"> Are similar functions contained in the same
-subscripts?</p>
 <p><input type="checkbox"> Is repetition in the code minimalised? For
 example, by moving reusable code into functions or classes.</p></li>
 <li><p>Project Structure</p>
