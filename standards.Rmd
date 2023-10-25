@@ -2,12 +2,6 @@
 title: "Coding Standards"
 ---
 
-## Repo Structure
-
-You should adhere to this structure when writing code:
-
-![](~/module_b_team_pages/assets/repo_structure.png)
-
 ## Linting Code
 
 Currently we are using the [`tidyverse` style guide](https://style.tidyverse.org/), which you can use through the `lintr` and `styler` packages:
@@ -64,7 +58,7 @@ select(...)
 
 We have a PowerPoint with further information on our [coding standards](https://defra.sharepoint.com/:p:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B98C3D254-86E8-44FD-BB2E-206B37F6F802%7D&file=Coding%20Standards.pptx&action=edit&mobileredirect=true).
 
-# Naming Conventions
+## Naming Conventions
 
 1. Github repositories should be all lower case with underscores "_" instead of spaces (e.g. *module_b*)
 2. R Script names should be camel case  with no spaces (e.g. *apportionEnglishTonnage.R*)

@@ -6,8 +6,8 @@ When working on model the we use the following methodology:
 
 | | Monday | Tuesday | Wednesday | Thursday | Friday |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **Meeting** | Allocating Tickets (11 am, 1 hour) | | Updates (10 am, 30 mins) | | Sprint Review (3:30 pm, 30 mins) |
-| **Purpose** | Deciding which tickets we want to complete this week. Allocating amongst us. | Progressing tickets. | Updating on completed tickets, identifying blockers for uncompleted tickets. | Completing tickets. Making pull requests. | Reviewing completed tickets. Demonstrating working code and a look forward to next week. |
+| **Meeting** | Allocating Tickets (11am, 1 hour) | Check In (9:20am, 10 mins) | Check In (9:20am, 10 mins) | Ticket Check (10:00am, 1 hour) | Demos (3:30pm, 30 mins) |
+| **Purpose** | Deciding which tickets we want to complete this week and allocating among us. | Updates, solving problems. | Updates, solving problems. | Helping with any tickets that have not been submitted for review. | Reviewing completed tickets. Demonstrating working code and a look forward to next week. |
 
 Several of these sprints will form each **model building cycle**. These will be bookended by extended kickoff and review meetings as shown below:
 

@@ -34,9 +34,13 @@ navbar:
         href: sce.html      
       - text: "Coding Standards"
         href: standards.html
+      - text: "Repository Structure"
+        href: repo.html
       - text: "Learning"
         href: learning.html  
     - text: "Useful Links"
       href: links.html
+    - text: "Glossary"
+      href: glossary.html
       
        

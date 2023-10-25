@@ -1,0 +1,7 @@
+---
+title: "Repository Structure"
+---
+
+You should adhere to this structure when writing code:
+
+![](~/module_b_team_pages/assets/repo_structure.png)
