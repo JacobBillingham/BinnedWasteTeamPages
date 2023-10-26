@@ -4,7 +4,7 @@ title: "How to edit Github code"
 
 Once you have cloned a repo it is likely you will want to make some changes to the code in it. To do that follow these steps:
 
-1.  For QA purposes we do not edit the *main* or *dev* branches directly, so you will need to create a branch of your own. To do that in R Studio click the 'New Branch' button in the Git window.
+1.  For QA purposes we do not edit the *main* or *dev* branches directly, so you will need to create a branch of your own. To do that in R Studio click the 'New Branch' button in the Git window (remember to 'Pull' first to make sure you are working on up-to-date code, see step 5a for relevant screenshot).
 
     <img src="~/module_b_team_pages/assets/new_branch_button.png"/>
 
