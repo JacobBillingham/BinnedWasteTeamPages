@@ -60,7 +60,7 @@ Make sure you tick off this **checklist** before submitting a pull request:
 
 -   For future use:
 
-    <input type="checkbox"> Have you documented all assumptions using the assumptions package?
+    <input type="checkbox"> Have you documented all assumptions using the [assumptions package](https://assumptions.readthedocs.io/en/latest/index.html)?
 
     <input type="checkbox"> Does your code have adequate unit tests? Are these run automatically using git hooks?
 

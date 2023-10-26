@@ -65,7 +65,7 @@ Make sure you tick off this **checklist** before approving a code review:
 
 -   For future use:
 
-    <input type="checkbox"> Have they documented all assumptions using the assumptions package?
+    <input type="checkbox"> Have they documented all assumptions using the [assumptions package](https://assumptions.readthedocs.io/en/latest/index.html)?
 
     <input type="checkbox"> Does their code have adequate unit tests? Are these run automatically using git hooks?
     
