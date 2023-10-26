@@ -7,6 +7,7 @@ Here are a number of resources you can use to help improve your coding:
   - [Defra's monthly data science sessions](https://defra.sharepoint.com/sites/Community448/SitePages/Events.aspx)
   - [BEIS's weekly Coffee and Coding sessions](https://forms.office.com/pages/responsepage.aspx?id=BXCsy8EC60O0l-ZJLRst2KUXyeG5QzlKhk--pMPwnKxURTJXTTFZVjVQSFA2SE1ZSVNKRDE3NzBYTy4u)
   - Defra has unlimited [DataCamp](https://www.datacamp.com/) licenses, so anyone in Defra can sign up for a pro account
+      - This [course on Git](https://app.datacamp.com/learn/courses/introduction-to-git) will be useful if you haven't used it before. 
   
 # ONS Guidance
 
