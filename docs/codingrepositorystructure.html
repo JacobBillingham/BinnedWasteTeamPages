@@ -11,7 +11,7 @@
 
 
 
-<title>Pull Requests</title>
+<title>Repository Structure</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -246,22 +246,34 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Checklists
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="checklistpullrequest.html">Pull Requests</a>
+    </li>
+    <li>
+      <a href="checklistcodereview.html">Code Reviews</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Team Info
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="organisation.html">Organisation</a>
+      <a href="teamstructure.html">Team Structure</a>
     </li>
     <li>
-      <a href="sprint.html">Sprint Timings</a>
+      <a href="teamsprinttimings.html">Sprint Timings</a>
     </li>
     <li>
-      <a href="meetings.html">Meeting Etiquette</a>
-    </li>
-    <li>
-      <a href="glossary.html">Acronyms</a>
+      <a href="teammeetingetiquette.html">Meeting Etiquette</a>
     </li>
   </ul>
 </li>
@@ -273,16 +285,16 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="setup.html">...set up Github</a>
+      <a href="howtosetupgithub.html">...set up Github</a>
     </li>
     <li>
-      <a href="edit.html">...edit Github code</a>
+      <a href="howtoeditgithubcode.html">...edit Github code</a>
     </li>
     <li>
-      <a href="requests.html">...pull request</a>
+      <a href="howtopullrequest.html">...pull request</a>
     </li>
     <li>
-      <a href="review.html">...code review</a>
+      <a href="howtocodereview.html">...code review</a>
     </li>
   </ul>
 </li>
@@ -294,24 +306,24 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="sce.html">Coding Environment</a>
+      <a href="codingenvironment.html">Coding Environment</a>
     </li>
     <li>
-      <a href="standards.html">Coding Standards</a>
+      <a href="codingstandards.html">Coding Standards</a>
     </li>
     <li>
-      <a href="repo.html">Repository Structure</a>
+      <a href="codingrepositorystructure.html">Repository Structure</a>
     </li>
     <li>
-      <a href="learning.html">Learning</a>
+      <a href="codinglearning.html">Learning</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="links.html">Useful Links</a>
+  <a href="usefullinks.html">Useful Links</a>
 </li>
 <li>
-  <a href="glossary.html">Glossary</a>
+  <a href="glossary.html">Acronyms</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -325,130 +337,13 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Pull Requests</h1>
+<h1 class="title toc-ignore">Repository Structure</h1>
 
 </div>
 
 
-<p>We use Github for version control, collaboration and code
-reviews.</p>
-<div id="checklist" class="section level1">
-<h1>Checklist</h1>
-<div
-style="background-color: #00a33b;             color: white;             padding: 1em;             border-radius: 10px;">
-<p>Make sure you tick off this <strong>checklist</strong> before
-submitting a pull request:</p>
-<ul>
-<li><p>Git</p>
-<p><input type="checkbox"> Are you merging into the appropriate branch
-(usually <em>dev</em>)?</p></li>
-<li><p>Admin</p>
-<p><input type="checkbox"> Have you provided the reviewer with a good
-description of what the code is meant to do in your pull request?</p>
-<p><input type="checkbox"> Have you updated the relevant <a
-href="https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=77PIAm&amp;xsdata=MDV8MDF8fGVmMDUxZTI0M2UzMDQyMGQxYjdkMDhkYmNlZjdmNmVhfDc3MGEyNDUwMDIyNzRjNjI5MGM3NGUzODUzN2YxMTAyfDB8MHw2MzgzMzEzMzY1OTc4Mzg3MTd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMMk5vWVhSekx6RTVPakZoTVdRd056STNZelExTXpSaU5UVmhOVEJsWlRNNVpHSTFOVGc1WWpneFFIUm9jbVZoWkM1Mk1pOXRaWE56WVdkbGN5OHhOamszTlRNMk9EVTVORGsxfDA0YjRiYjU2MzdhMzRjYjUxYjdkMDhkYmNlZjdmNmVhfGNmYzQ5YjQ2MGE1ODQzZDc5YzdkYmVlY2QxYjBhYzY4&amp;sdata=YVFjcG55cWNSNnk1cmlDSk9xNzhNNURzd0tCRnhZNzJKZUFSbG52OVZMTT0%3D&amp;ovuser=770a2450%2D0227%2D4c62%2D90c7%2D4e38537f1102%2CJacob%2EBillingham%40defra%2Egov%2Euk&amp;OR=Teams%2DHL&amp;CT=1697538108978&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA5MDExMjI3OCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;cid=22c09b0c%2D5d1a%2D4bfc%2D9011%2D4b821c8b4eb1&amp;FolderCTID=0x0120009DD0451A50BCD14598E383179B1663D1&amp;id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29%2F18%20Module%20B1%20%2D%20LA%20FNCs%2F04%20Bottom%2Dup%20Modelling%2FQA%20Logs&amp;viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4">quality
-assurance logs</a>?</p>
-<p>Your role is ‘doer’ and as such you need to fill out the relevant
-sections in the ‘Cover’, ‘Data Log’, ‘Assumptions Log’ and ‘Outputs’
-tabs. Note any new data uploaded to S3 should be logged in our <a
-href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">S3
-Data Log</a> and the information can then be copied across to the QA log
-data tab.</p>
-<p><input type="checkbox"> Have you added any issues identified to the
-Jira backlog?</p></li>
-<li><p>Coding Standards</p>
-<p><input type="checkbox"> Have you linted your code to ensure it
-complies with the style guide?</p>
-<p><input type="checkbox"> Is your code’s logic clear and free of
-unnecessary complexity?</p>
-<p><input type="checkbox"> Have you commented to explain whenever logic
-is not obvious?</p>
-<p><input type="checkbox"> Are variable names in plain English and
-informative?</p>
-<p><input type="checkbox"> Are the outputs reproducible i.e. will the
-code work the same on someone else’s machine?</p></li>
-<li><p>Modularisation</p>
-<p><input type="checkbox"> Are individual pieces of logic, i.e. that
-carry out one specific task, written as functions?</p>
-<p><input type="checkbox"> Does one main analysis script source and run
-functions from subscripts?</p>
-<p><input type="checkbox"> Is repetition in the code minimalised? For
-example, by moving reusable code into functions or classes.</p></li>
-<li><p>Project Structure</p>
-<p><input type="checkbox"> Is your code in the right repo and folder
-within that repo? See diagram on coding standards page if unsure.</p>
-<p><input type="checkbox"> Are your imports done from the
-‘<em>imports.R</em>’ file?</p>
-<p><input type="checkbox"> Are your functions sourced from the
-‘<em>source.R</em>’ file?</p>
-<p><input type="checkbox"> Are your outputs written to the right place
-in S3?</p></li>
-<li><p>Documentation</p>
-<p><input type="checkbox"> Have you updated the README files with any
-changes relevant to your code?</p></li>
-<li><p>For future use:</p>
-<p><input type="checkbox"> Have you documented all assumptions using the
-assumptions package?</p>
-<p><input type="checkbox"> Does your code have adequate unit tests? Are
-these run automatically using git hooks?</p>
-<p><input type="checkbox"> Does your code pass existing unit
-tests?</p></li>
-</ul>
-</div>
-</div>
-<div id="instructions" class="section level1">
-<h1>Instructions</h1>
-<p>Here are the <strong>step-by-step instructions</strong> to submit a
-pull request:</p>
-<ol style="list-style-type: decimal">
-<li><p>Follow the steps on the ‘How to edit Github code’ to make the
-changes for your ticket</p></li>
-<li><p>Then go to the relevant repo on Github and navigate to your
-branch</p>
-<ol style="list-style-type: lower-alpha">
-<li>Use either the branches drop down or click on ‘<em>x branches</em>’
-to go to the branches page and select your branch.</li>
-</ol>
-<p><img
-src="assets/branches_button.png" /></p></li>
-<li><p>If your push was recent there may be a pop up allowing you to
-‘<em>compare and pull request</em>’, if not then click
-‘<em>Contribute</em>’ and ‘<em>Open pull request</em>’.</p>
-<p><img
-src="assets/contribute_button.png" /></p></li>
-<li><p>Now check your pull request is set up correctly:</p>
-<ol style="list-style-type: lower-alpha">
-<li>Make sure you are merging to the correct branch, this will usually
-be <em>dev</em> (for code in development) or sometimes <em>main</em> if
-it has been fully quality assured.</li>
-<li>Click ‘<em>Reviewer</em>’ and select the person who has agreed to
-review your code.</li>
-<li>Make sure your pull request has a title and description that will
-allow the reviewer to understand what you have done.</li>
-<li>You can also check that the correct files have changed at the bottom
-of the page.</li>
-<li>You will also need to check there are no ‘merge conflicts’. This is
-where someone has changed the same files as you and so you need to agree
-with that person what are the correct changes and modify accordingly,
-the screenshot below shows ‘<em>Able to merge</em>’ indicating there are
-no conflicts.</li>
-</ol>
-<p><img src="assets/pull_request.png" /></p></li>
-<li><p>Before submitting your pull request once again make sure you have
-ticked all the boxes at the top of of this page! Then you can click
-‘<em>Create pull request</em>’.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Once you have created the pull request you should move the ticket to
-‘For Review’ on Jira. You should then create a subtask by clicking
-‘<em>Add child issue</em>’ and assign this subtask to your
-reviewer.</li>
-</ol></li>
-<li><p>Your reviewer will then inspect your code and may ask you some
-questions or suggest some changes. Once you have responded to these they
-will approve your pull request and you can merge your changes!</p>
-<p><img src="assets/approved.png" /></p></li>
-</ol>
-</div>
+<p>You should adhere to this structure when writing code:</p>
+<p><img src="assets/repo_structure.png" /></p>
 
 
 

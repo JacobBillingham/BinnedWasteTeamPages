@@ -5,22 +5,38 @@ title: "Useful Links"
 Here are all the links from across the team pages (and some extras) in one place for your convenience:
     
 ```{r automatically collect links, echo=FALSE, message=FALSE, warning=FALSE}
+
+#'Note: having two links in a sentence will put both links on one row of the
+#'table, this can be avoided with bullet points.
+
 library(magrittr)
 
 files <- list.files(path = ".", pattern = "*.Rmd")
-files <- files[files != "links.Rmd"] # to stop function checking this script
+files <- files[files != "usefullinks.Rmd"] # to stop function checking this script
 links <- data.frame(title = character(), V2 = character())
 
 for (i in seq_along(files)) {
   script <- readLines(files[i])
 
   title <- gsub("title:", "", gsub('\"', "", script[2]))
-  space_urls <- na.omit(stringr::str_match(script, "\\[.*?\\) "))
-  stop_urls <- na.omit(stringr::str_match(script, "\\[.*?\\)\\."))
-  stop_urls <- gsub("\\.","", stop_urls)
+  space_urls <- na.omit(stringr::str_match(script, "\\[.*?\\)[:space:]"))
+  punctuation_urls <- na.omit(stringr::str_match(script, "\\[.*?\\)[:punct:]"))
+  end_urls <- na.omit(stringr::str_match(script, "\\[.*?\\)$"))
   
-  addtl_links <- rbind(data.frame(cbind(title, space_urls)), data.frame(cbind(title, stop_urls)))
+  #remove punctuation
+  punctuation_urls <- gsub("\\?","", punctuation_urls)
+  punctuation_urls <- gsub("\\.","", punctuation_urls)
+  punctuation_urls <- gsub("\\,","", punctuation_urls)
+  
+  addtl_links <- dplyr::bind_rows(
+    data.frame(cbind(title, space_urls)), 
+    data.frame(cbind(title, punctuation_urls)),
+    data.frame(cbind(title, end_urls))
+    ) %>% 
+    dplyr::filter(!grepl("assets", V2)) #filter out pictures
+  
   links <- rbind(links, addtl_links)
+  
 }
 
 colnames(links) <- c("Page", "Link")

@@ -11,7 +11,7 @@
 
 
 
-<title>Meeting Etiquette</title>
+<title>How to set up Github</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -246,22 +246,34 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Checklists
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="checklistpullrequest.html">Pull Requests</a>
+    </li>
+    <li>
+      <a href="checklistcodereview.html">Code Reviews</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Team Info
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="organisation.html">Organisation</a>
+      <a href="teamstructure.html">Team Structure</a>
     </li>
     <li>
-      <a href="sprint.html">Sprint Timings</a>
+      <a href="teamsprinttimings.html">Sprint Timings</a>
     </li>
     <li>
-      <a href="meetings.html">Meeting Etiquette</a>
-    </li>
-    <li>
-      <a href="glossary.html">Acronyms</a>
+      <a href="teammeetingetiquette.html">Meeting Etiquette</a>
     </li>
   </ul>
 </li>
@@ -273,16 +285,16 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="setup.html">...set up Github</a>
+      <a href="howtosetupgithub.html">...set up Github</a>
     </li>
     <li>
-      <a href="edit.html">...edit Github code</a>
+      <a href="howtoeditgithubcode.html">...edit Github code</a>
     </li>
     <li>
-      <a href="requests.html">...pull request</a>
+      <a href="howtopullrequest.html">...pull request</a>
     </li>
     <li>
-      <a href="review.html">...code review</a>
+      <a href="howtocodereview.html">...code review</a>
     </li>
   </ul>
 </li>
@@ -294,24 +306,24 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="sce.html">Coding Environment</a>
+      <a href="codingenvironment.html">Coding Environment</a>
     </li>
     <li>
-      <a href="standards.html">Coding Standards</a>
+      <a href="codingstandards.html">Coding Standards</a>
     </li>
     <li>
-      <a href="repo.html">Repository Structure</a>
+      <a href="codingrepositorystructure.html">Repository Structure</a>
     </li>
     <li>
-      <a href="learning.html">Learning</a>
+      <a href="codinglearning.html">Learning</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="links.html">Useful Links</a>
+  <a href="usefullinks.html">Useful Links</a>
 </li>
 <li>
-  <a href="glossary.html">Glossary</a>
+  <a href="glossary.html">Acronyms</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -325,50 +337,49 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Meeting Etiquette</h1>
+<h1 class="title toc-ignore">How to set up Github</h1>
 
 </div>
 
 
-<p>These guidelines for meetings are endorsed by our senior leadership
-so please use them:</p>
+<p>In order to work with code that is stored on Github in R Studio we
+need to ‘clone’ the relevant repository. ‘Cloning’ a repository means
+creating a copy on your local machine that so you can run and edit the
+code in it!</p>
+<p>To clone a repository, follow these steps:</p>
 <ol style="list-style-type: decimal">
-<li>All employees are empowered to block out time in calendars free of
-meetings and this is respected.</li>
-<li>All colleagues should avoid setting up meetings where possible if
-time has been blocked out.</li>
-<li>We will block out the Defra lunch hour (12:30-1:30pm) in all R&amp;W
-employees.</li>
-<li>Before producing your invite consider if the whole team is required
-or if a representative would work with notes to take away to present to
-their team.</li>
-<li>All meetings have a clear agenda and purpose, circulated ahead of
-the meeting to allow individuals to prepare and contribute effectively –
-and will inform who is best placed to attend.</li>
-<li>Meetings should typically be no longer than 50 minutes, which allows
-10 minutes comfort between meetings. Meetings that are longer than 50
-minutes should include a 10-minute comfort break.</li>
-<li>Avoid multi-tasking and working on other documents allowing people
-to be present.</li>
-<li>Using calendars correctly - accepting and declining meetings (select
-to send a response this will update tracking) - tracking can then be
-seen and it can be determined if the meeting should go ahead.</li>
-<li>A short readout and key points should be cascaded to relevant teams
-asap after the meeting.</li>
+<li><p>First we need to generate a ‘personal access token’.</p>
+<ol style="list-style-type: lower-alpha">
+<li>To do this go to <a
+href="https://github.com/settings/tokens">Github’s token generator
+page</a> and select ‘Generate new token’ then ‘Classic’.</li>
+<li>You can then put anything in note, but make sure the gist, repo,
+user and workflow boxes are checked and click generate token.</li>
+<li>Make sure you copy and paste this token somewhere safe as you
+<strong>won’t be able to see it again</strong>! We will need it later on
+and a lot in future</li>
 </ol>
-<p>Some additional tips:</p>
 <ul>
-<li>You can set meetings to start at 5 past automatically (File &gt;
-Options &gt; Calendar &gt; Shorten appointments and meetings)</li>
-<li>You can view only someone’s ‘accepted’ meetings by going to ‘View
-&gt; View Settings &gt; Filter &gt; Advanced’ and then setting the
-filter to ‘Meeting Status’ ‘equals’ ‘Accepted’. This will hide their
-meetings that are tentative or free to allow you to find a slot.</li>
-<li>This <a
-href="https://meeting-cost.toolsforcivilservants.co.uk/">meeting cost
-calculator</a> will tell you how much a meeting actually costs based on
-the salaries of those attending.</li>
-</ul>
+<li>Unless you have set it not to, eventually this token will expire
+will expire and you will need to create a new one.</li>
+</ul></li>
+<li><p>Next obtain the address of the repository you want to clone. This
+can be found on the repository page on github by clicking the green
+“&lt;&gt; Code” button (it is usually the URL of the repo with “.git” at
+the end).</p>
+<p><img src="assets/repo_address_button.png" width="258" height="238"/></p></li>
+<li><p>Next, in R Studio go to <em>‘File &gt; New Project &gt; Version
+Control &gt; Git’</em> and paste in the address from the previous step.
+Then click ‘Create project’.</p></li>
+<li><p>If prompted enter your Github username <strong>but instead of our
+password we need to use the token we generated in step 1 of ‘How to
+clone a repository’</strong>.</p></li>
+<li><p>You have now successfully cloned a repo into your R Studio. You
+should now be able to access the git tab in the top right
+window.</p></li>
+</ol>
+<p>To make changes to the code follow the steps on the “How to edit
+Github code” page.</p>
 
 
 

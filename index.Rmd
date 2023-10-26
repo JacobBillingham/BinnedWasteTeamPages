@@ -2,8 +2,6 @@
 title: "Welcome!"
 ---
 
-[comment]: <> (rmarkdown::render_site())
-
 The **Fees and Payments Calculator** team is responsible for developing a model to estimate local authorities’ costs of collecting and disposing of packaging.
 
 Producers will then be required to pay these costs which will incentivise them to **reduce packaging waste** and **make packaging more recyclable**.

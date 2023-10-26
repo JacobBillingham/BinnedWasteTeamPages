@@ -11,7 +11,7 @@
 
 
 
-<title>Welcome!</title>
+<title>Coding Environment</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -337,25 +337,40 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Welcome!</h1>
+<h1 class="title toc-ignore">Coding Environment</h1>
 
 </div>
 
 
-<p>The <strong>Fees and Payments Calculator</strong> team is responsible
-for developing a model to estimate local authorities’ costs of
-collecting and disposing of packaging.</p>
-<p>Producers will then be required to pay these costs which will
-incentivise them to <strong>reduce packaging waste</strong> and
-<strong>make packaging more recyclable</strong>.</p>
-<p>This brings many benefits including greater resource efficiency,
-reduced pollution and reduced carbon emissions, <strong>supporting
-nature</strong> and <strong>combating climate change</strong>.</p>
-<p>These pages contain all the information you need to code in the Fees
-and Payments Calculator team! You should refer back to them if there is
-something you don’t know (but feel free to ask questions)!</p>
-<p><em>Please suggest anything you think is missing from this
-site!</em></p>
+<p>We use Defra’s <strong>Scientific Coding Environment</strong> which
+allows us to write and run code on Amazon Web Service’s EC2 virtual
+machines, and store our data using Amazon Web Services S3. Speak to the
+SCE admins (Ope and Jake as of September 2023) if you are not set up on
+the SCE.</p>
+<p>We can use <a href="http://ranch-479.int.sce.network/rstudio/">R
+Studio on our virtual machine</a>. This is available 5am - 11pm
+daily.</p>
+<div id="s3" class="section level1">
+<h1>S3</h1>
+<p>S3 is accessed through the <a
+href="https://int-sce-network.awsapps.com/console">AWS console</a>. When
+we upload, modify or delete data on S3, this must be recorded in the <a
+href="https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&amp;file=Data%20Log%20Ranch_479.xlsx&amp;action=default&amp;mobileredirect=true">Data
+Log</a>.</p>
+<p><strong>All binned waste data</strong> should be stored in the
+appropriate B1 or B2 folder at: <em>s3://s3-ranch-043/Module_B1/</em> or
+<em>s3://s3-ranch-043/moduleB2/</em>..</p>
+<p>Scripts for reading and writing to AWS can be found in the <a
+href="https://github.com/Defra-pEPR-Modelling-Team/useful_scripts/blob/main/AWS%20to%20R.Rmd">useful
+scripts repo</a>. Here is an example of <strong>reading</strong> an
+<strong>Excel</strong> file:</p>
+<pre class="r"><code>excel_data &lt;- aws.s3::s3read_using(
+  FUN = openxlsx::read.xlsx,
+  object = &quot;test_folder/test_data.xlsx&quot;, # this file exists, but replace with your own filepath
+  sheet=&quot;Sheet1&quot;,
+  fillMergedCells = TRUE,
+  bucket = &quot;s3-ranch-043&quot;)</code></pre>
+</div>
 
 
 

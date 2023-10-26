@@ -11,42 +11,40 @@ navbar:
     - text: "Checklists"
       menu: 
       - text: "Pull Requests"
-        href: checkrequest.html
+        href: checklistpullrequest.html
       - text: "Code Reviews"
-        href: checkreview.html
+        href: checklistcodereview.html
     - text: "Team Info"
       menu:
-      - text: "Organisation"
-        href: organisation.html  
+      - text: "Team Structure"
+        href: teamstructure.html  
       - text: "Sprint Timings"
-        href: sprint.html
+        href: teamsprinttimings.html
       - text: "Meeting Etiquette"
-        href: meetings.html  
-      - text: "Acronyms"
-        href: glossary.html
+        href: teammeetingetiquette.html  
+
     - text: "How to..."
       menu:
       - text: "...set up Github"
-        href: setup.html
+        href: howtosetupgithub.html
       - text: "...edit Github code"
-        href: edit.html
+        href: howtoeditgithubcode.html
       - text: "...pull request"
-        href: requests.html
+        href: howtopullrequest.html
       - text: "...code review"
-        href: review.html
+        href: howtocodereview.html
     - text: "Coding"
       menu:
       - text: "Coding Environment"
-        href: sce.html      
+        href: codingenvironment.html      
       - text: "Coding Standards"
-        href: standards.html
+        href: codingstandards.html
       - text: "Repository Structure"
-        href: repo.html
+        href: codingrepositorystructure.html
       - text: "Learning"
-        href: learning.html  
+        href: codinglearning.html  
     - text: "Useful Links"
-      href: links.html
-    - text: "Glossary"
+      href: usefullinks.html
+    - text: "Acronyms"
       href: glossary.html
-      
        

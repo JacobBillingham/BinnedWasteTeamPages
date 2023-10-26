@@ -11,7 +11,7 @@
 
 
 
-<title>Code Review</title>
+<title>How to Code Review</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -246,22 +246,34 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Checklists
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="checklistpullrequest.html">Pull Requests</a>
+    </li>
+    <li>
+      <a href="checklistcodereview.html">Code Reviews</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Team Info
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="organisation.html">Organisation</a>
+      <a href="teamstructure.html">Team Structure</a>
     </li>
     <li>
-      <a href="sprint.html">Sprint Timings</a>
+      <a href="teamsprinttimings.html">Sprint Timings</a>
     </li>
     <li>
-      <a href="meetings.html">Meeting Etiquette</a>
-    </li>
-    <li>
-      <a href="glossary.html">Acronyms</a>
+      <a href="teammeetingetiquette.html">Meeting Etiquette</a>
     </li>
   </ul>
 </li>
@@ -273,16 +285,16 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="setup.html">...set up Github</a>
+      <a href="howtosetupgithub.html">...set up Github</a>
     </li>
     <li>
-      <a href="edit.html">...edit Github code</a>
+      <a href="howtoeditgithubcode.html">...edit Github code</a>
     </li>
     <li>
-      <a href="requests.html">...pull request</a>
+      <a href="howtopullrequest.html">...pull request</a>
     </li>
     <li>
-      <a href="review.html">...code review</a>
+      <a href="howtocodereview.html">...code review</a>
     </li>
   </ul>
 </li>
@@ -294,24 +306,24 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="sce.html">Coding Environment</a>
+      <a href="codingenvironment.html">Coding Environment</a>
     </li>
     <li>
-      <a href="standards.html">Coding Standards</a>
+      <a href="codingstandards.html">Coding Standards</a>
     </li>
     <li>
-      <a href="repo.html">Repository Structure</a>
+      <a href="codingrepositorystructure.html">Repository Structure</a>
     </li>
     <li>
-      <a href="learning.html">Learning</a>
+      <a href="codinglearning.html">Learning</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="links.html">Useful Links</a>
+  <a href="usefullinks.html">Useful Links</a>
 </li>
 <li>
-  <a href="glossary.html">Glossary</a>
+  <a href="glossary.html">Acronyms</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -325,7 +337,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Code Review</h1>
+<h1 class="title toc-ignore">How to Code Review</h1>
 
 </div>
 
@@ -333,72 +345,8 @@ $(document).ready(function () {
 <p>This <a href="https://www.youtube.com/watch?v=lSnbOtw4izI">Github
 code review tutorial</a> shows you how to review a pull request, or you
 can follow the steps at the bottom of this page.</p>
-<div id="checklist" class="section level1">
-<h1>Checklist</h1>
-<div style="background-color: #00a33b;
-            color: white;
-            padding: 1em;
-            border-radius: 10px;">
-<p>Make sure you tick off this <strong>checklist</strong> before
-approving a code review:</p>
-<ul>
-<li><p>Git</p>
-<p><input type="checkbox"> Are they merging into the appropriate branch
-(usually <em>dev</em>)?</p></li>
-<li><p>Admin</p>
-<p><input type="checkbox"> Have they provided you with a good
-description of what the code is meant to do in the pull request?</p>
-<p><input type="checkbox"> Have they updated the relevant <a
-href="https://defra.sharepoint.com/teams/Team1478/Extended%20Producer%20Responsibility%20for%20Packaging/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=77PIAm&amp;xsdata=MDV8MDF8fGVmMDUxZTI0M2UzMDQyMGQxYjdkMDhkYmNlZjdmNmVhfDc3MGEyNDUwMDIyNzRjNjI5MGM3NGUzODUzN2YxMTAyfDB8MHw2MzgzMzEzMzY1OTc4Mzg3MTd8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMMk5vWVhSekx6RTVPakZoTVdRd056STNZelExTXpSaU5UVmhOVEJsWlRNNVpHSTFOVGc1WWpneFFIUm9jbVZoWkM1Mk1pOXRaWE56WVdkbGN5OHhOamszTlRNMk9EVTVORGsxfDA0YjRiYjU2MzdhMzRjYjUxYjdkMDhkYmNlZjdmNmVhfGNmYzQ5YjQ2MGE1ODQzZDc5YzdkYmVlY2QxYjBhYzY4&amp;sdata=YVFjcG55cWNSNnk1cmlDSk9xNzhNNURzd0tCRnhZNzJKZUFSbG52OVZMTT0%3D&amp;ovuser=770a2450%2D0227%2D4c62%2D90c7%2D4e38537f1102%2CJacob%2EBillingham%40defra%2Egov%2Euk&amp;OR=Teams%2DHL&amp;CT=1697538108978&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA5MDExMjI3OCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&amp;cid=22c09b0c%2D5d1a%2D4bfc%2D9011%2D4b821c8b4eb1&amp;FolderCTID=0x0120009DD0451A50BCD14598E383179B1663D1&amp;id=%2Fteams%2FTeam1478%2FExtended%20Producer%20Responsibility%20for%20Packaging%2F15%20Fees%20and%20Payments%20Calculator%20%28FPC%29%2F18%20Module%20B1%20%2D%20LA%20FNCs%2F04%20Bottom%2Dup%20Modelling%2FQA%20Logs&amp;viewid=ec0dda87%2Dc649%2D45d1%2Da9f9%2D150ad0e349b4">quality
-assurance logs</a>?</p>
-<p>Your role is ‘checker’ and as such you should fill out the relevant
-sections in the ‘Data Log’, ‘QA- Verification’ and ‘Outputs’
-tabs.</p></li>
-<li><p>Purpose</p>
-<p><input type="checkbox"> Does the code do what is set out in the
-ticket?</p>
-<p><input type="checkbox"> Does the code run succesfully and behave the
-same for you?</p></li>
-<li><p>Coding Standards</p>
-<p><input type="checkbox"> Have they linted their code to ensure it
-complies with the style guide?</p>
-<p><input type="checkbox"> Is their code’s logic clear and free of
-unnecessary complexity?</p>
-<p><input type="checkbox"> Have they commented to explain whenever logic
-is not obvious?</p>
-<p><input type="checkbox"> Are variable names in plain English and
-informative?</p></li>
-<li><p>Modularisation</p>
-<p><input type="checkbox"> Are individual pieces of logic, i.e. that
-carry out one specific task, written as functions?</p>
-<p><input type="checkbox"> Does one main analysis script source and run
-functions from subscripts?</p>
-<p><input type="checkbox"> Are similar functions contained in the same
-subscripts?</p>
-<p><input type="checkbox"> Is repetition in the code minimalised? For
-example, by moving reusable code into functions or classes.</p></li>
-<li><p>Project Structure</p>
-<p><input type="checkbox"> Is their code in the right repo and folder
-within that repo? See diagram on coding standards page if unsure.</p>
-<p><input type="checkbox"> Are their imports done from the
-‘<em>imports.R</em>’ file?</p>
-<p><input type="checkbox"> Are their functions sourced from the
-‘<em>source.R</em>’ file?</p>
-<p><input type="checkbox"> Are their outputs written to the right place
-in S3?</p></li>
-<li><p>Documentation</p>
-<p><input type="checkbox"> Have they updated the README files with any
-changes relevant to their code?</p></li>
-<li><p>For future use:</p>
-<p><input type="checkbox"> Have they documented all assumptions using
-the assumptions package?</p>
-<p><input type="checkbox"> Does their code have adequate unit tests? Are
-these run automatically using git hooks?</p>
-<p><input type="checkbox"> Does their code pass existing unit
-tests?</p></li>
-</ul>
-</div>
-</div>
+<p><strong>Make sure you use the <a href="checklistcodereview.html">code
+review checklist</a> when submitting pull requests.</strong></p>
 <div id="instuctions" class="section level1">
 <h1>Instuctions</h1>
 <p>Follow these step-by-step instructions to do a proper code

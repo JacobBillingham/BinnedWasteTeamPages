@@ -11,7 +11,7 @@
 
 
 
-<title>How We Work</title>
+<title>Meeting Etiquette</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -246,22 +246,34 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Checklists
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="checklistpullrequest.html">Pull Requests</a>
+    </li>
+    <li>
+      <a href="checklistcodereview.html">Code Reviews</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Team Info
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="organisation.html">Organisation</a>
+      <a href="teamstructure.html">Team Structure</a>
     </li>
     <li>
-      <a href="sprint.html">Sprint Timings</a>
+      <a href="teamsprinttimings.html">Sprint Timings</a>
     </li>
     <li>
-      <a href="meetings.html">Meeting Etiquette</a>
-    </li>
-    <li>
-      <a href="glossary.html">Acronyms</a>
+      <a href="teammeetingetiquette.html">Meeting Etiquette</a>
     </li>
   </ul>
 </li>
@@ -273,16 +285,16 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="setup.html">...set up Github</a>
+      <a href="howtosetupgithub.html">...set up Github</a>
     </li>
     <li>
-      <a href="edit.html">...edit Github code</a>
+      <a href="howtoeditgithubcode.html">...edit Github code</a>
     </li>
     <li>
-      <a href="requests.html">...pull request</a>
+      <a href="howtopullrequest.html">...pull request</a>
     </li>
     <li>
-      <a href="review.html">...code review</a>
+      <a href="howtocodereview.html">...code review</a>
     </li>
   </ul>
 </li>
@@ -294,24 +306,24 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="sce.html">Coding Environment</a>
+      <a href="codingenvironment.html">Coding Environment</a>
     </li>
     <li>
-      <a href="standards.html">Coding Standards</a>
+      <a href="codingstandards.html">Coding Standards</a>
     </li>
     <li>
-      <a href="repo.html">Repository Structure</a>
+      <a href="codingrepositorystructure.html">Repository Structure</a>
     </li>
     <li>
-      <a href="learning.html">Learning</a>
+      <a href="codinglearning.html">Learning</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="links.html">Useful Links</a>
+  <a href="usefullinks.html">Useful Links</a>
 </li>
 <li>
-  <a href="glossary.html">Glossary</a>
+  <a href="glossary.html">Acronyms</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -325,91 +337,50 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">How We Work</h1>
+<h1 class="title toc-ignore">Meeting Etiquette</h1>
 
 </div>
 
 
-<p>When working on model the we use the following methodology:</p>
-<table>
-<colgroup>
-<col width="10%" />
-<col width="17%" />
-<col width="17%" />
-<col width="17%" />
-<col width="17%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th align="center">Monday</th>
-<th align="center">Tuesday</th>
-<th align="center">Wednesday</th>
-<th align="center">Thursday</th>
-<th align="center">Friday</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Meeting</strong></td>
-<td align="center">Allocating Tickets (11am, 1 hour)</td>
-<td align="center">Check In (9:20am, 10 mins)</td>
-<td align="center">Check In (9:20am, 10 mins)</td>
-<td align="center">Ticket Check (10:00am, 1 hour)</td>
-<td align="center">Demos (3:30pm, 30 mins)</td>
-</tr>
-<tr class="even">
-<td><strong>Purpose</strong></td>
-<td align="center">Deciding which tickets we want to complete this week
-and allocating among us.</td>
-<td align="center">Updates, solving problems.</td>
-<td align="center">Updates, solving problems.</td>
-<td align="center">Helping with any tickets that have not been submitted
-for review.</td>
-<td align="center">Reviewing completed tickets. Demonstrating working
-code and a look forward to next week.</td>
-</tr>
-</tbody>
-</table>
-<p>Several of these sprints will form each <strong>model building
-cycle</strong>. These will be bookended by extended kickoff and review
-meetings as shown below:</p>
-<table style="width:100%;">
-<colgroup>
-<col width="9%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Activity</strong></td>
-<td align="center">Kickoff Meeting (1 hr)</td>
-<td align="center">Sprint 1</td>
-<td align="center">Sprint 2</td>
-<td align="center">Sprint 3</td>
-<td align="center">…</td>
-<td align="center">Review Meeting (1 hr)</td>
-</tr>
-<tr class="even">
-<td><strong>Purpose</strong></td>
-<td align="center">What do we want to achieve this cycle?</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">Did we achieve our goals? What lessons did we learn?
-Review our ticket backlog.</td>
-</tr>
-</tbody>
-</table>
-<p>We manage tasks for each sprint on the <a
-href="https://eaflood.atlassian.net/jira/software/projects/B1/boards/1483">Module
-B1 Jira board</a>.</p>
+<p>These guidelines for meetings are endorsed by our senior leadership
+so please use them:</p>
+<ol style="list-style-type: decimal">
+<li>All employees are empowered to block out time in calendars free of
+meetings and this is respected.</li>
+<li>All colleagues should avoid setting up meetings where possible if
+time has been blocked out.</li>
+<li>We will block out the Defra lunch hour (12:30-1:30pm) in all R&amp;W
+employees.</li>
+<li>Before producing your invite consider if the whole team is required
+or if a representative would work with notes to take away to present to
+their team.</li>
+<li>All meetings have a clear agenda and purpose, circulated ahead of
+the meeting to allow individuals to prepare and contribute effectively –
+and will inform who is best placed to attend.</li>
+<li>Meetings should typically be no longer than 50 minutes, which allows
+10 minutes comfort between meetings. Meetings that are longer than 50
+minutes should include a 10-minute comfort break.</li>
+<li>Avoid multi-tasking and working on other documents allowing people
+to be present.</li>
+<li>Using calendars correctly - accepting and declining meetings (select
+to send a response this will update tracking) - tracking can then be
+seen and it can be determined if the meeting should go ahead.</li>
+<li>A short readout and key points should be cascaded to relevant teams
+asap after the meeting.</li>
+</ol>
+<p>Some additional tips:</p>
+<ul>
+<li>You can set meetings to start at 5 past automatically (File &gt;
+Options &gt; Calendar &gt; Shorten appointments and meetings)</li>
+<li>You can view only someone’s ‘accepted’ meetings by going to ‘View
+&gt; View Settings &gt; Filter &gt; Advanced’ and then setting the
+filter to ‘Meeting Status’ ‘equals’ ‘Accepted’. This will hide their
+meetings that are tentative or free to allow you to find a slot.</li>
+<li>This <a
+href="https://meeting-cost.toolsforcivilservants.co.uk/">meeting cost
+calculator</a> will tell you how much a meeting actually costs based on
+the salaries of those attending.</li>
+</ul>
 
 
 

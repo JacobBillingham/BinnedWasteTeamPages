@@ -1,10 +1,8 @@
 ---
-title: "Code Review"
+title: "Code Review Checklist"
 ---
 
-This [Github code review tutorial](https://www.youtube.com/watch?v=lSnbOtw4izI) shows you how to review a pull request, or you can follow the steps at the bottom of this page.
-
-#   Checklist
+Make sure all of these are ticked before you approve a pull request assigned to you:
 
 <div style="background-color: #00a33b;
             color: white;
@@ -53,7 +51,7 @@ Make sure you tick off this **checklist** before approving a code review:
 
 -   Project Structure
     
-    <input type="checkbox"> Is their code in the right repo and folder within that repo? See diagram on coding standards page if unsure.
+    <input type="checkbox"> Is their code in the right repo and folder within that repo? See [repo structure](codingrepositorystructure.html) if unsure.
     
     <input type="checkbox"> Are their imports done from the '*imports.R*' file?
     
@@ -74,21 +72,3 @@ Make sure you tick off this **checklist** before approving a code review:
     <input type="checkbox"> Does their code pass existing unit tests?
     
 </div>
-
-#   Instuctions
-
-Follow these step-by-step instructions to do a proper code review:
-
-1.  Navigate to the '*pull request*' that has been assigned to you. Click '*Review changes*'
-
-    ![](~/module_b_team_pages/assets/review_changes_button.png)
-
-2.  Make comments and suggestions as you see fit by clicking the blue plus to the left of the line you want to comment on. Make sure you tick off everything in the above checklist.
-
-    ![](~/module_b_team_pages/assets/add_comment_button.png)
-
-3.  When you are ready click '*Finish your review*' add a summary comment and then click '*Submit review*'. You may choose to leave comments to be responded to, suggest changes to be made or simply approve the pull request straight away.
-
-    a.  When you have approved the request you should also mark the review subtask on the Jira ticket as complete.
-
-    <img src="~/module_b_team_pages/assets/finish_review.png" width="311" height="222"/>

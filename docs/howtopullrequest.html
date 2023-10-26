@@ -11,7 +11,7 @@
 
 
 
-<title>How to edit Github code</title>
+<title>How to Pull Request</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -246,22 +246,34 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Checklists
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="checklistpullrequest.html">Pull Requests</a>
+    </li>
+    <li>
+      <a href="checklistcodereview.html">Code Reviews</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Team Info
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="organisation.html">Organisation</a>
+      <a href="teamstructure.html">Team Structure</a>
     </li>
     <li>
-      <a href="sprint.html">Sprint Timings</a>
+      <a href="teamsprinttimings.html">Sprint Timings</a>
     </li>
     <li>
-      <a href="meetings.html">Meeting Etiquette</a>
-    </li>
-    <li>
-      <a href="glossary.html">Acronyms</a>
+      <a href="teammeetingetiquette.html">Meeting Etiquette</a>
     </li>
   </ul>
 </li>
@@ -273,16 +285,16 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="setup.html">...set up Github</a>
+      <a href="howtosetupgithub.html">...set up Github</a>
     </li>
     <li>
-      <a href="edit.html">...edit Github code</a>
+      <a href="howtoeditgithubcode.html">...edit Github code</a>
     </li>
     <li>
-      <a href="requests.html">...pull request</a>
+      <a href="howtopullrequest.html">...pull request</a>
     </li>
     <li>
-      <a href="review.html">...code review</a>
+      <a href="howtocodereview.html">...code review</a>
     </li>
   </ul>
 </li>
@@ -294,24 +306,24 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="sce.html">Coding Environment</a>
+      <a href="codingenvironment.html">Coding Environment</a>
     </li>
     <li>
-      <a href="standards.html">Coding Standards</a>
+      <a href="codingstandards.html">Coding Standards</a>
     </li>
     <li>
-      <a href="repo.html">Repository Structure</a>
+      <a href="codingrepositorystructure.html">Repository Structure</a>
     </li>
     <li>
-      <a href="learning.html">Learning</a>
+      <a href="codinglearning.html">Learning</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="links.html">Useful Links</a>
+  <a href="usefullinks.html">Useful Links</a>
 </li>
 <li>
-  <a href="glossary.html">Glossary</a>
+  <a href="glossary.html">Acronyms</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -325,70 +337,69 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">How to edit Github code</h1>
+<h1 class="title toc-ignore">How to Pull Request</h1>
 
 </div>
 
 
-<p>Once you have cloned a repo it is likely you will want to make some
-changes to the code in it. To do that follow these steps:</p>
+<p>We use Github for version control, collaboration and code
+reviews.</p>
+<p><strong>Make sure you use the <a
+href="checklistpullrequest.html">pull request checklist</a> when
+submitting pull requests.</strong></p>
+<div id="instructions" class="section level1">
+<h1>Instructions</h1>
+<p>Here are the <strong>step-by-step instructions</strong> to submit a
+pull request:</p>
 <ol style="list-style-type: decimal">
-<li><p>For QA purposes we do not edit the <em>main</em> or <em>dev</em>
-branches directly, so you will need to create a branch of your own. To
-do that in R Studio click the ‘New Branch’ button in the Git window.</p>
-<p><img src="assets/new_branch_button.png"/></p></li>
-<li><p>You should then name your branch the same as the Jira ticket you
-are working on, for instance “B1-20 Extract and reformat RFI data”. Then
-click ‘Create’. The branch name next to the ‘New Branch’ button should
-now have the name of your branch.</p></li>
-<li><p>Now is time for you to make your edits! Make any changes you nee,
-following the coding standards, and frequently ‘commit’ (this is
-explained in the next step).</p></li>
-<li><p>When you make and save some changes Git will notice, so any
-changed files will appear in the Git window. Committing is like telling
-git those changes are ready to be uploaded to Github (which will happen
-in the next step). To commit:</p>
+<li><p>Follow the steps on the ‘How to edit Github code’ to make the
+changes for your ticket</p></li>
+<li><p>Then go to the relevant repo on Github and navigate to your
+branch</p>
 <ol style="list-style-type: lower-alpha">
-<li>Tick the box in the Git window for the files you wish to
-commit.</li>
-<li>Click the commit button.</li>
+<li>Use either the branches drop down or click on ‘<em>x branches</em>’
+to go to the branches page and select your branch.</li>
 </ol>
-<p><img src="assets/commit_button.png" /></p>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>In the window that opens, review your changes are as intended.</li>
-<li>Then add a ‘Commit message’ explaining what you have done, and click
-commit underneath.</li>
-<li>Close the window and go back to making changes.</li>
-</ol></li>
-</ol>
-<ul>
-<li>It is good practice to <strong>commit frequently</strong> so your
-changes are logged incrementally on Github.</li>
-</ul>
-<ol start="5" style="list-style-type: decimal">
-<li><p>Once you have committed all the changes you need, we can ‘push’
-them to Github. You should do this once you have finished a ticket and
-whenever you stop working on the code e.g. for a meeting, to have lunch
-or at the end of the day. Follow these steps:</p>
+<p><img
+src="assets/branches_button.png" /></p></li>
+<li><p>If your push was recent there may be a pop up allowing you to
+‘<em>compare and pull request</em>’, if not then click
+‘<em>Contribute</em>’ and ‘<em>Open pull request</em>’.</p>
+<p><img
+src="assets/contribute_button.png" /></p></li>
+<li><p>Now check your pull request is set up correctly:</p>
 <ol style="list-style-type: lower-alpha">
-<li>Firstly it is good practice to ‘pull’ to check no-one has changed
-our branch whilst we were working. Click the ‘Pull’ button and if
-prompted enter your Github username <strong>but instead of our password
-we need to use the token we generated in step 1 of ‘How to clone a
-repository’</strong>. Close any the Git pull pop-up.</li>
+<li>Make sure you are merging to the correct branch, this will usually
+be <em>dev</em> (for code in development) or sometimes <em>main</em> if
+it has been fully quality assured.</li>
+<li>Click ‘<em>Reviewer</em>’ and select the person who has agreed to
+review your code.</li>
+<li>Make sure your pull request has a title and description that will
+allow the reviewer to understand what you have done.</li>
+<li>You can also check that the correct files have changed at the bottom
+of the page.</li>
+<li>You will also need to check there are no ‘merge conflicts’. This is
+where someone has changed the same files as you and so you need to agree
+with that person what are the correct changes and modify accordingly,
+the screenshot below shows ‘<em>Able to merge</em>’ indicating there are
+no conflicts.</li>
 </ol>
-<p><img src="assets/pull_button.png" /></p>
-<ol start="2" style="list-style-type: lower-alpha">
-<li>Now we are ready to ‘push’, click the ‘Push’ button and once again
-if prompted enter your Github username <strong>but instead of our
-password we need to use the token we generated in step 1 of ‘How to
-clone a repository’</strong>.</li>
-</ol>
-<p><img src="assets/push_button.png" /></p>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>You have now successfully pushed your changes to Github.</li>
+<p><img src="assets/pull_request.png" /></p></li>
+<li><p>Before submitting your pull request once again make sure you have
+ticked all the boxes at the top of of this page! Then you can click
+‘<em>Create pull request</em>’.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Once you have created the pull request you should move the ticket to
+‘For Review’ on Jira. You should then create a subtask by clicking
+‘<em>Add child issue</em>’ and assign this subtask to your
+reviewer.</li>
 </ol></li>
+<li><p>Your reviewer will then inspect your code and may ask you some
+questions or suggest some changes. Once you have responded to these they
+will approve your pull request and you can merge your changes!</p>
+<p><img src="assets/approved.png" /></p></li>
 </ol>
+</div>
 
 
 

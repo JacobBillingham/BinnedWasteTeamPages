@@ -6,7 +6,7 @@ Here are a number of resources you can use to help improve your coding:
 
   - [Defra's monthly data science sessions](https://defra.sharepoint.com/sites/Community448/SitePages/Events.aspx)
   - [BEIS's weekly Coffee and Coding sessions](https://forms.office.com/pages/responsepage.aspx?id=BXCsy8EC60O0l-ZJLRst2KUXyeG5QzlKhk--pMPwnKxURTJXTTFZVjVQSFA2SE1ZSVNKRDE3NzBYTy4u)
-  - [DataCamp](https://www.datacamp.com/) (Defra has unlimited DataCamp licenses, so anyone in Defra can sign up for a pro account)
+  - Defra has unlimited [DataCamp](https://www.datacamp.com/) licenses, so anyone in Defra can sign up for a pro account
   
 # ONS Guidance
 
@@ -16,7 +16,7 @@ The book's guidance is embedded in these pages but here are some important point
 
 ### Theory
 
-- The three pillars of rigourous analysis...
+- The three pillars of rigorous analysis...
     - Reproducible analysis: "the same analysis steps performed on the same dataset consistently produces the same result"
     - Auditable analysis: "analysis and supporting evidence are available for scrutiny"
     - Assured analysis: "analysis has passed through a systematic process that established it as fit for purpose"
