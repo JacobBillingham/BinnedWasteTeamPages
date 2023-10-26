@@ -8,6 +8,12 @@ output:
 navbar:
   title: "Module B Team Pages"
   left:
+    - text: "Checklists"
+      menu: 
+      - text: "Pull Requests"
+        href: checkrequest.html
+      - text: "Code Reviews"
+        href: checkreview.html
     - text: "Team Info"
       menu:
       - text: "Organisation"

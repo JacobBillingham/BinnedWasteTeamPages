@@ -18,3 +18,4 @@ Some additional tips:
 
 -   You can set meetings to start at 5 past automatically (File > Options > Calendar > Shorten appointments and meetings)
 -   You can view only someone's 'accepted' meetings by going to 'View > View Settings > Filter > Advanced' and then setting the filter to 'Meeting Status' 'equals' 'Accepted'. This will hide their meetings that are tentative or free to allow you to find a slot.
+-   This [meeting cost calculator](https://meeting-cost.toolsforcivilservants.co.uk/) will tell you how much a meeting actually costs based on the salaries of those attending.
