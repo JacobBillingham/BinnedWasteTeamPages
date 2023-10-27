@@ -6,6 +6,26 @@ We use Defra's **Scientific Coding Environment** which allows us to write and ru
 
 We can use [R Studio on our virtual machine](http://ranch-479.int.sce.network/rstudio/). This is available 5am - 11pm daily. 
 
+# How to login to AWS (Amazon Web Services)
+
+To login to AWS you just need to enter the username and password the SCE team sent you. Your username will be in the format firstnamelastname
+
+The first time you login to AWS, there is some initial set up to do - you only need to do this once: 
+
+1. [Go here](https://int-sce-network.awsapps.com/console)
+
+2. Log in using existing credentials
+
+3. You are now in the LOGIN account. You need to switch role to the RANCH account using the menu in the top right corner of the page (official docs)
+
+4. Ranch account number: 172974337612 
+
+5. Role name is ExtendedProducerResponsibility
+
+6. Display name can be anything you like
+
+7. Once logged in, remember to set the region to Ireland (AKA eu-west-1)
+
 # S3
 
 S3 is accessed through the [AWS console](https://int-sce-network.awsapps.com/console). When we upload, modify or delete data on S3, this must be recorded in the [Data Log](https://defra.sharepoint.com/:x:/r/teams/Team1478/_layouts/15/Doc.aspx?sourcedoc=%7B2FCDCE89-3F0D-41DD-B451-CB0D77D8DA26%7D&file=Data%20Log%20Ranch_479.xlsx&action=default&mobileredirect=true).
